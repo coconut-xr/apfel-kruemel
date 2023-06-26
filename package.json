@@ -1,0 +1,28 @@
+{
+  "name": "@coconut-xr/apfel-kruemel",
+  "version": "1.0.0",
+  "description": "Component Library for Apples Spatial User Interfaces",
+  "source": "src/index.ts",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "types": "dist/types.d.ts",
+  "keywords": [],
+  "author": "Pascal Zinke",
+  "license": "ISC",
+  "scripts": {
+    "watch": "parcel watch",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@coconut-xr/koestlich": "^0.0.15",
+    "@types/react": "^18.2.13",
+    "parcel": "^2.9.2",
+    "prettier": "^2.8.8",
+    "prettier-plugin-organize-imports": "^3.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "peerDependencies": {
+    "@coconut-xr/koestlich": "^0.0.15"
+  }
+}

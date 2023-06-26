@@ -1,3 +1,3 @@
 # Apfel Kruemel
 
-Component library for apples SpatialUI.
+Component library for Apple's Spatial User Interfaces.

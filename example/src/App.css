@@ -1,0 +1,28 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.tab {
+  border: none;
+  background: none;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  color: gray;
+}
+
+.tab.active {
+  color: black;
+}
