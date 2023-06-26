@@ -12,11 +12,7 @@
   "dependencies": {
     "@coconut-xr/koestlich": "^0.0.15",
     "@react-three/drei": "^9.77.3",
-    "@react-three/fiber": "^8.13.3",
-    "clsx": "^1.2.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "three": "^0.153.0"
+    "clsx": "^1.2.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",

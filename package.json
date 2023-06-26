@@ -8,7 +8,7 @@
   "types": "dist/types.d.ts",
   "keywords": [],
   "author": "Pascal Zinke",
-  "license": "ISC",
+  "license": "SEE LICENSE IN LICENSE",
   "scripts": {
     "watch": "parcel watch",
     "build": "parcel build"
@@ -20,7 +20,8 @@
     "prettier": "^2.8.8",
     "prettier-plugin-organize-imports": "^3.2.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "@react-three/fiber": "^8.13.3"
   },
   "peerDependencies": {
     "@coconut-xr/koestlich": "^0.0.15"
