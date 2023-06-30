@@ -1,3 +1,3 @@
-export default function Colors() {
+export default function ColorsPage() {
   return null;
 }

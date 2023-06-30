@@ -1,10 +1,10 @@
 import { Fonts } from "@coconut-xr/apfel-kruemel";
+import { RootContainer } from "@coconut-xr/koestlich";
+import { Environment } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import clsx from "clsx";
 import { useState } from "react";
 import "./App.css";
-import Screen from "./components/Screen";
-import Skybox from "./components/Skybox";
 import Typography from "./pages/Typography";
 
 type Tab = "typography" | "colors";
@@ -30,12 +30,19 @@ function App() {
       </div>
       <div className="content">
         <Canvas>
-          <Skybox />
-          <Screen>
-            <Fonts>
-              <Typography />
-            </Fonts>
-          </Screen>
+          <Environment files="/apartment_4k.hdr" background />
+          <Fonts>
+            <group scale={1 / 200}>
+              <RootContainer
+                anchorX="center"
+                anchorY="center"
+                width={1920}
+                height={1080}
+              >
+                <Typography />
+              </RootContainer>
+            </group>
+          </Fonts>
         </Canvas>
       </div>
     </div>

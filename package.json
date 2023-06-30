@@ -14,14 +14,16 @@
     "build": "parcel build"
   },
   "devDependencies": {
-    "@coconut-xr/koestlich": "^0.0.15",
-    "@types/react": "^18.2.13",
-    "parcel": "^2.9.2",
+    "@coconut-xr/koestlich": "^0.1.0",
+    "@react-three/drei": "^9.77.7",
+    "@react-three/fiber": "^8.13.3",
+    "@types/react": "^18.2.14",
+    "clsx": "^1.2.1",
+    "parcel": "^2.9.3",
     "prettier": "^2.8.8",
     "prettier-plugin-organize-imports": "^3.2.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "@react-three/fiber": "^8.13.3"
+    "react-dom": "^18.2.0"
   },
   "peerDependencies": {
     "@coconut-xr/koestlich": "^0.0.15"
