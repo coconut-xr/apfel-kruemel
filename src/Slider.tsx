@@ -131,7 +131,7 @@ export function Slider({
         minWidth={height}
         height="100%"
         borderRadius={height / 2}
-        backgroundOpacity={disabled ? 0.25 : 0.5}
+        backgroundOpacity={disabled ? 0.25 : 0.6}
       >
         {showIcon && (
           <Container
