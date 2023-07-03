@@ -1,6 +1,7 @@
 import { Fonts, Scale } from "@coconut-xr/apfel-kruemel";
 import { Environment, OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
+import { Suspense } from "react";
 import { BrowserRouter, NavLink, Route, Routes } from "react-router-dom";
 import "./App.css";
 import ButtonsPage from "./pages/Buttons";
@@ -21,9 +22,11 @@ function App() {
             <OrbitControls />
             <Fonts>
               <Scale>
-                <Routes>
-                  <Route path="/buttons" element={<ButtonsPage />} />
-                </Routes>
+                <Suspense>
+                  <Routes>
+                    <Route path="/buttons" element={<ButtonsPage />} />
+                  </Routes>
+                </Suspense>
               </Scale>
             </Fonts>
           </Canvas>

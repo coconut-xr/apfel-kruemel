@@ -1,10 +1,17 @@
-import { Glass, IconButton } from "@coconut-xr/apfel-kruemel";
-import { Container, RootContainer } from "@coconut-xr/koestlich";
+import { Button, Glass, IconButton } from "@coconut-xr/apfel-kruemel";
+import { Container, RootContainer, Text } from "@coconut-xr/koestlich";
 import { BoxSelect } from "@coconut-xr/lucide-koestlich";
 
 export default function ButtonsPage() {
   return (
-    <RootContainer anchorX="center" anchorY="center" precision={0.01}>
+    <RootContainer
+      anchorX="center"
+      anchorY="center"
+      precision={0.01}
+      flexDirection="row"
+      gapColumn={32}
+      alignItems="center"
+    >
       <Glass color="#999" borderRadius={32} padding={24}>
         <Container flexDirection="row" gapColumn={16}>
           <Container
@@ -94,6 +101,136 @@ export default function ButtonsPage() {
             <IconButton size="xl" disabled>
               <BoxSelect height={20} width={20} />
             </IconButton>
+          </Container>
+        </Container>
+      </Glass>
+
+      <Glass color="#999" borderRadius={32} padding={24}>
+        <Container flexDirection="column" gapRow={32}>
+          <Container flexDirection="row" gapColumn={16}>
+            <Container
+              flexDirection="column"
+              alignItems="flex-start"
+              gapRow={16}
+            >
+              <Button style="pill" size="sm">
+                <Text fontSize={12}>Label</Text>
+              </Button>
+              <Button style="pill" size="md">
+                <Text fontSize={14}>Label</Text>
+              </Button>
+              <Button style="pill" size="lg">
+                <Text fontSize={16}>Label</Text>
+              </Button>
+            </Container>
+            <Container
+              flexDirection="column"
+              alignItems="flex-start"
+              gapRow={16}
+            >
+              <Button style="pill" size="sm" platter>
+                <Text fontSize={12}>Label</Text>
+              </Button>
+              <Button style="pill" size="md" platter>
+                <Text fontSize={14}>Label</Text>
+              </Button>
+              <Button style="pill" size="lg" platter>
+                <Text fontSize={16}>Label</Text>
+              </Button>
+            </Container>
+            <Container
+              flexDirection="column"
+              alignItems="flex-start"
+              gapRow={16}
+            >
+              <Button style="pill" size="sm" selected>
+                <Text fontSize={12}>Label</Text>
+              </Button>
+              <Button style="pill" size="md" selected>
+                <Text fontSize={14}>Label</Text>
+              </Button>
+              <Button style="pill" size="lg" selected>
+                <Text fontSize={16}>Label</Text>
+              </Button>
+            </Container>
+            <Container
+              flexDirection="column"
+              alignItems="flex-start"
+              gapRow={16}
+            >
+              <Button style="pill" size="sm" disabled>
+                <Text fontSize={12}>Label</Text>
+              </Button>
+              <Button style="pill" size="md" disabled>
+                <Text fontSize={14}>Label</Text>
+              </Button>
+              <Button style="pill" size="lg" disabled>
+                <Text fontSize={16}>Label</Text>
+              </Button>
+            </Container>
+          </Container>
+
+          <Container flexDirection="row" gapColumn={16}>
+            <Container
+              flexDirection="column"
+              alignItems="flex-start"
+              gapRow={16}
+            >
+              <Button style="rect" size="sm">
+                <Text fontSize={12}>Label</Text>
+              </Button>
+              <Button style="rect" size="md">
+                <Text fontSize={14}>Label</Text>
+              </Button>
+              <Button style="rect" size="lg">
+                <Text fontSize={16}>Label</Text>
+              </Button>
+            </Container>
+            <Container
+              flexDirection="column"
+              alignItems="flex-start"
+              gapRow={16}
+            >
+              <Button style="rect" size="sm" platter>
+                <Text fontSize={12}>Label</Text>
+              </Button>
+              <Button style="rect" size="md" platter>
+                <Text fontSize={14}>Label</Text>
+              </Button>
+              <Button style="rect" size="lg" platter>
+                <Text fontSize={16}>Label</Text>
+              </Button>
+            </Container>
+            <Container
+              flexDirection="column"
+              alignItems="flex-start"
+              gapRow={16}
+            >
+              <Button style="rect" size="sm" selected>
+                <Text fontSize={12}>Label</Text>
+              </Button>
+              <Button style="rect" size="md" selected>
+                <Text fontSize={14}>Label</Text>
+              </Button>
+              <Button style="rect" size="lg" selected>
+                <Text fontSize={16}>Label</Text>
+              </Button>
+            </Container>
+            <Container
+              flexDirection="column"
+              alignItems="flex-start"
+              gapRow={16}
+            >
+              <Button style="rect" size="sm" disabled>
+                <Text fontSize={12}>Label</Text>
+              </Button>
+              <Button style="rect" size="md" disabled>
+                <Text fontSize={14}>Label</Text>
+              </Button>
+              <Button style="rect" size="lg" disabled>
+                <Text fontSize={16}>Label</Text>
+              </Button>
+            </Container>
           </Container>
         </Container>
       </Glass>

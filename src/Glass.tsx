@@ -4,7 +4,7 @@ import { ComponentPropsWithoutRef } from "react";
 import { ColorRepresentation, MeshPhongMaterial } from "three";
 
 const material = makeBorderMaterial(MeshPhongMaterial, {
-  specular: "#555",
+  specular: "#333",
   shininess: 100,
 });
 

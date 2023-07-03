@@ -5,32 +5,34 @@ import {
 } from "@coconut-xr/koestlich";
 import { ComponentPropsWithoutRef, useState } from "react";
 
-type Size = "xs" | "sm" | "md" | "lg" | "xl" | number;
+type Size = "sm" | "md" | "lg";
+type Style = "pill" | "rect";
 
-type IconButtonProps = ComponentPropsWithoutRef<typeof Container> & {
+type ButtonProps = ComponentPropsWithoutRef<typeof Container> & {
   size?: Size;
+  style?: Style;
   platter?: boolean;
   selected?: boolean;
   disabled?: boolean;
 };
 
-export function IconButton({
+export function Button({
   children,
   size = "md",
+  style = "rect",
   platter,
   selected,
   disabled,
   ...props
-}: IconButtonProps) {
-  const diameter = getDiameter(size);
+}: ButtonProps) {
+  const height = getHeight(size);
   const [hoverCount, setHoverCount] = useState(0);
 
   return (
     <Container
-      width={diameter}
-      height={diameter}
-      borderRadius={diameter / 2}
-      alignItems="center"
+      height={height}
+      paddingX={getPadding(size)}
+      borderRadius={style === "pill" ? height / 2 : getBorderRadius(size)}
       justifyContent="center"
       backgroundColor="white"
       backgroundOpacity={
@@ -55,18 +57,35 @@ export function IconButton({
   );
 }
 
-function getDiameter(size: Size) {
-  if (typeof size === "number") return size;
+function getHeight(size: Size) {
   switch (size) {
-    case "xs":
-      return 28;
     case "sm":
       return 32;
     case "md":
       return 44;
     case "lg":
-      return 50;
-    case "xl":
-      return 64;
+      return 52;
+  }
+}
+
+function getPadding(size: Size) {
+  switch (size) {
+    case "sm":
+      return 12;
+    case "md":
+      return 20;
+    case "lg":
+      return 25;
+  }
+}
+
+function getBorderRadius(size: Size) {
+  switch (size) {
+    case "sm":
+      return 8;
+    case "md":
+      return 12;
+    case "lg":
+      return 16;
   }
 }
