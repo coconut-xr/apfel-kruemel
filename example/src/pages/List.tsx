@@ -32,14 +32,6 @@ export default function ListPage() {
             >
               <Text>Title</Text>
             </ListItem>
-            <ListItem
-              subtitle={<Text>Subtitle</Text>}
-              trailingAccessory={
-                <ChevronRight height={12} width={12} opacity={0.3} />
-              }
-            >
-              <Text>Title</Text>
-            </ListItem>
           </List>
         </Glass>
         <Glass borderRadius={32} padding={16}>
@@ -77,17 +69,6 @@ export default function ListPage() {
             >
               <Text>Title</Text>
             </ListItem>
-            <ListItem
-              subtitle={<Text>Subtitle</Text>}
-              leadingAccessory={<BoxSelect height={16} width={16} />}
-              trailingAccessory={
-                <IconButton size="xs" platter>
-                  <Info height={14} width={14} />
-                </IconButton>
-              }
-            >
-              <Text>Title</Text>
-            </ListItem>
           </List>
         </Glass>
       </Container>
@@ -104,14 +85,6 @@ export default function ListPage() {
               <Text>Title</Text>
             </ListItem>
             <ListItem
-              trailingAccessory={
-                <ChevronRight height={12} width={12} opacity={0.3} />
-              }
-            >
-              <Text>Title</Text>
-            </ListItem>
-            <ListItem
-              subtitle={<Text>Subtitle</Text>}
               trailingAccessory={
                 <ChevronRight height={12} width={12} opacity={0.3} />
               }
@@ -144,17 +117,6 @@ export default function ListPage() {
               <Text>Title</Text>
             </ListItem>
             <ListItem
-              leadingAccessory={<BoxSelect height={16} width={16} />}
-              trailingAccessory={
-                <IconButton size="xs" platter>
-                  <Info height={14} width={14} />
-                </IconButton>
-              }
-            >
-              <Text>Title</Text>
-            </ListItem>
-            <ListItem
-              subtitle={<Text>Subtitle</Text>}
               leadingAccessory={<BoxSelect height={16} width={16} />}
               trailingAccessory={
                 <IconButton size="xs" platter>

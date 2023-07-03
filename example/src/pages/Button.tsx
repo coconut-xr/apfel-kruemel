@@ -14,19 +14,19 @@ export default function ButtonPage() {
             gapRow={16}
           >
             <IconButton size="xs">
-              <BoxSelect height={12} width={12} />
+              <BoxSelect />
             </IconButton>
             <IconButton size="sm">
-              <BoxSelect height={14} width={14} />
+              <BoxSelect />
             </IconButton>
             <IconButton size="md">
-              <BoxSelect height={16} width={16} />
+              <BoxSelect />
             </IconButton>
             <IconButton size="lg">
-              <BoxSelect height={18} width={18} />
+              <BoxSelect />
             </IconButton>
             <IconButton size="xl">
-              <BoxSelect height={20} width={20} />
+              <BoxSelect />
             </IconButton>
           </Container>
           <Container
@@ -36,19 +36,19 @@ export default function ButtonPage() {
             gapRow={16}
           >
             <IconButton size="xs" platter>
-              <BoxSelect height={12} width={12} />
+              <BoxSelect />
             </IconButton>
             <IconButton size="sm" platter>
-              <BoxSelect height={14} width={14} />
+              <BoxSelect />
             </IconButton>
             <IconButton size="md" platter>
-              <BoxSelect height={16} width={16} />
+              <BoxSelect />
             </IconButton>
             <IconButton size="lg" platter>
-              <BoxSelect height={18} width={18} />
+              <BoxSelect />
             </IconButton>
             <IconButton size="xl" platter>
-              <BoxSelect height={20} width={20} />
+              <BoxSelect />
             </IconButton>
           </Container>
           <Container
@@ -58,19 +58,19 @@ export default function ButtonPage() {
             gapRow={16}
           >
             <IconButton size="xs" selected>
-              <BoxSelect height={12} width={12} />
+              <BoxSelect />
             </IconButton>
             <IconButton size="sm" selected>
-              <BoxSelect height={14} width={14} />
+              <BoxSelect />
             </IconButton>
             <IconButton size="md" selected>
-              <BoxSelect height={16} width={16} />
+              <BoxSelect />
             </IconButton>
             <IconButton size="lg" selected>
-              <BoxSelect height={18} width={18} />
+              <BoxSelect />
             </IconButton>
             <IconButton size="xl" selected>
-              <BoxSelect height={20} width={20} />
+              <BoxSelect />
             </IconButton>
           </Container>
           <Container
@@ -80,19 +80,19 @@ export default function ButtonPage() {
             gapRow={16}
           >
             <IconButton size="xs" disabled>
-              <BoxSelect height={12} width={12} />
+              <BoxSelect />
             </IconButton>
             <IconButton size="sm" disabled>
-              <BoxSelect height={14} width={14} />
+              <BoxSelect />
             </IconButton>
             <IconButton size="md" disabled>
-              <BoxSelect height={16} width={16} />
+              <BoxSelect />
             </IconButton>
             <IconButton size="lg" disabled>
-              <BoxSelect height={18} width={18} />
+              <BoxSelect />
             </IconButton>
             <IconButton size="xl" disabled>
-              <BoxSelect height={20} width={20} />
+              <BoxSelect />
             </IconButton>
           </Container>
         </Container>
@@ -107,13 +107,13 @@ export default function ButtonPage() {
               gapRow={16}
             >
               <Button style="pill" size="sm">
-                <Text fontSize={12}>Label</Text>
+                <Text>Label</Text>
               </Button>
               <Button style="pill" size="md">
-                <Text fontSize={14}>Label</Text>
+                <Text>Label</Text>
               </Button>
               <Button style="pill" size="lg">
-                <Text fontSize={16}>Label</Text>
+                <Text>Label</Text>
               </Button>
             </Container>
             <Container
@@ -122,13 +122,13 @@ export default function ButtonPage() {
               gapRow={16}
             >
               <Button style="pill" size="sm" platter>
-                <Text fontSize={12}>Label</Text>
+                <Text>Label</Text>
               </Button>
               <Button style="pill" size="md" platter>
-                <Text fontSize={14}>Label</Text>
+                <Text>Label</Text>
               </Button>
               <Button style="pill" size="lg" platter>
-                <Text fontSize={16}>Label</Text>
+                <Text>Label</Text>
               </Button>
             </Container>
             <Container
@@ -137,13 +137,13 @@ export default function ButtonPage() {
               gapRow={16}
             >
               <Button style="pill" size="sm" selected>
-                <Text fontSize={12}>Label</Text>
+                <Text>Label</Text>
               </Button>
               <Button style="pill" size="md" selected>
-                <Text fontSize={14}>Label</Text>
+                <Text>Label</Text>
               </Button>
               <Button style="pill" size="lg" selected>
-                <Text fontSize={16}>Label</Text>
+                <Text>Label</Text>
               </Button>
             </Container>
             <Container
@@ -152,13 +152,13 @@ export default function ButtonPage() {
               gapRow={16}
             >
               <Button style="pill" size="sm" disabled>
-                <Text fontSize={12}>Label</Text>
+                <Text>Label</Text>
               </Button>
               <Button style="pill" size="md" disabled>
-                <Text fontSize={14}>Label</Text>
+                <Text>Label</Text>
               </Button>
               <Button style="pill" size="lg" disabled>
-                <Text fontSize={16}>Label</Text>
+                <Text>Label</Text>
               </Button>
             </Container>
           </Container>
@@ -170,13 +170,13 @@ export default function ButtonPage() {
               gapRow={16}
             >
               <Button style="rect" size="sm">
-                <Text fontSize={12}>Label</Text>
+                <Text>Label</Text>
               </Button>
               <Button style="rect" size="md">
-                <Text fontSize={14}>Label</Text>
+                <Text>Label</Text>
               </Button>
               <Button style="rect" size="lg">
-                <Text fontSize={16}>Label</Text>
+                <Text>Label</Text>
               </Button>
             </Container>
             <Container
@@ -185,13 +185,13 @@ export default function ButtonPage() {
               gapRow={16}
             >
               <Button style="rect" size="sm" platter>
-                <Text fontSize={12}>Label</Text>
+                <Text>Label</Text>
               </Button>
               <Button style="rect" size="md" platter>
-                <Text fontSize={14}>Label</Text>
+                <Text>Label</Text>
               </Button>
               <Button style="rect" size="lg" platter>
-                <Text fontSize={16}>Label</Text>
+                <Text>Label</Text>
               </Button>
             </Container>
             <Container
@@ -200,13 +200,13 @@ export default function ButtonPage() {
               gapRow={16}
             >
               <Button style="rect" size="sm" selected>
-                <Text fontSize={12}>Label</Text>
+                <Text>Label</Text>
               </Button>
               <Button style="rect" size="md" selected>
-                <Text fontSize={14}>Label</Text>
+                <Text>Label</Text>
               </Button>
               <Button style="rect" size="lg" selected>
-                <Text fontSize={16}>Label</Text>
+                <Text>Label</Text>
               </Button>
             </Container>
             <Container
@@ -215,13 +215,13 @@ export default function ButtonPage() {
               gapRow={16}
             >
               <Button style="rect" size="sm" disabled>
-                <Text fontSize={12}>Label</Text>
+                <Text>Label</Text>
               </Button>
               <Button style="rect" size="md" disabled>
-                <Text fontSize={14}>Label</Text>
+                <Text>Label</Text>
               </Button>
               <Button style="rect" size="lg" disabled>
-                <Text fontSize={16}>Label</Text>
+                <Text>Label</Text>
               </Button>
             </Container>
           </Container>

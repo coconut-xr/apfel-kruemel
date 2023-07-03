@@ -1,8 +1,4 @@
-import {
-  Container,
-  DefaultStyleProvider,
-  TextProperties,
-} from "@coconut-xr/koestlich";
+import { Container, DefaultStyleProvider } from "@coconut-xr/koestlich";
 import { ComponentPropsWithoutRef, useState } from "react";
 
 type Size = "xs" | "sm" | "md" | "lg" | "xl" | number;
@@ -23,6 +19,7 @@ export function IconButton({
   ...props
 }: IconButtonProps) {
   const diameter = getDiameter(size);
+  const iconHeight = getIconHeight(size);
   const [hoverCount, setHoverCount] = useState(0);
 
   return (
@@ -46,9 +43,11 @@ export function IconButton({
         props.onPointerLeave?.(e);
       }}
     >
-      <DefaultStyleProvider<TextProperties>
+      <DefaultStyleProvider
         color={selected && !disabled ? "black" : "white"}
         opacity={disabled ? 0.4 : 1}
+        height={iconHeight}
+        width={iconHeight}
       >
         {children}
       </DefaultStyleProvider>
@@ -69,5 +68,20 @@ function getDiameter(size: Size) {
       return 50;
     case "xl":
       return 64;
+  }
+}
+
+function getIconHeight(size: Size) {
+  switch (size) {
+    case "xs":
+      return 12;
+    case "sm":
+      return 14;
+    case "md":
+      return 18;
+    case "lg":
+      return 22;
+    case "xl":
+      return 28;
   }
 }

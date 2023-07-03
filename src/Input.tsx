@@ -57,7 +57,9 @@ export function Input({
       <DefaultStyleProvider color="white" opacity={disabled ? 0.2 : 0.5}>
         {prefix && (
           <Container paddingX={12} index={0}>
-            {prefix}
+            <DefaultStyleProvider width={14} height={14}>
+              {prefix}
+            </DefaultStyleProvider>
           </Container>
         )}
         <Text fontSize={14} index={1}>

@@ -51,6 +51,7 @@ export function Button({
       <DefaultStyleProvider<TextProperties>
         color={selected && !disabled ? "black" : "white"}
         opacity={disabled ? 0.4 : 1}
+        fontSize={getFontSize(size)}
       >
         {children}
       </DefaultStyleProvider>
@@ -86,6 +87,17 @@ function getBorderRadius(size: Size) {
       return 8;
     case "md":
       return 12;
+    case "lg":
+      return 16;
+  }
+}
+
+function getFontSize(size: Size) {
+  switch (size) {
+    case "sm":
+      return 12;
+    case "md":
+      return 14;
     case "lg":
       return 16;
   }

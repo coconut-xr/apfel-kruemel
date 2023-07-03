@@ -1,6 +1,6 @@
 import { Glass, Input } from "@coconut-xr/apfel-kruemel";
 import { Container } from "@coconut-xr/koestlich";
-import { Search } from "@coconut-xr/lucide-koestlich";
+import { BoxSelect } from "@coconut-xr/lucide-koestlich";
 
 export default function InputPage() {
   return (
@@ -13,17 +13,13 @@ export default function InputPage() {
           width={300}
         >
           <Input style="rect" placeholder="Value" />
-          <Input
-            style="rect"
-            placeholder="Value"
-            prefix={<Search height={14} width={14} />}
-          />
+          <Input style="rect" placeholder="Value" prefix={<BoxSelect />} />
           <Input style="rect" placeholder="Value" disabled />
           <Input
             style="rect"
             placeholder="Value"
             disabled
-            prefix={<Search height={14} width={14} />}
+            prefix={<BoxSelect />}
           />
         </Container>
         <Container
@@ -33,17 +29,13 @@ export default function InputPage() {
           width={300}
         >
           <Input style="pill" placeholder="Value" />
-          <Input
-            style="pill"
-            placeholder="Value"
-            prefix={<Search height={14} width={14} />}
-          />
+          <Input style="pill" placeholder="Value" prefix={<BoxSelect />} />
           <Input style="pill" placeholder="Value" disabled />
           <Input
             style="pill"
             placeholder="Value"
             disabled
-            prefix={<Search height={14} width={14} />}
+            prefix={<BoxSelect />}
           />
         </Container>
       </Container>
