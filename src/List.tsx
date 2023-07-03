@@ -66,7 +66,7 @@ export function ListItem({
 
   return (
     <Container
-      height={60}
+      height={subtitle ? 72 : 60}
       borderRadius={type === "plain" ? 16 : undefined}
       borderRadiusTop={type === "inset" ? (isFirst ? 16 : 0) : undefined}
       borderRadiusBottom={type === "inset" ? (isLast ? 16 : 0) : undefined}

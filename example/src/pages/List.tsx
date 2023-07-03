@@ -7,36 +7,43 @@ export default function ListPage() {
     <Container flexDirection="column" gapRow={32}>
       <Container flexDirection="row" gapColumn={32}>
         <Glass borderRadius={32} padding={16}>
-          <List type="plain" width={300}>
+          <List type="plain" width={400}>
             <ListItem
               subtitle={<Text>Subtitle</Text>}
-              trailingAccessory={<ChevronRight height={12} width={12} />}
+              trailingAccessory={
+                <ChevronRight height={12} width={12} opacity={0.3} />
+              }
             >
               <Text>Title</Text>
             </ListItem>
             <ListItem
-              subtitle={<Text>Subtitle</Text>}
-              trailingAccessory={<ChevronRight height={12} width={12} />}
+              trailingAccessory={
+                <ChevronRight height={12} width={12} opacity={0.3} />
+              }
             >
               <Text>Title</Text>
             </ListItem>
             <ListItem
               subtitle={<Text>Subtitle</Text>}
               selected
-              trailingAccessory={<ChevronRight height={12} width={12} />}
+              trailingAccessory={
+                <ChevronRight height={12} width={12} opacity={0.3} />
+              }
             >
               <Text>Title</Text>
             </ListItem>
             <ListItem
               subtitle={<Text>Subtitle</Text>}
-              trailingAccessory={<ChevronRight height={12} width={12} />}
+              trailingAccessory={
+                <ChevronRight height={12} width={12} opacity={0.3} />
+              }
             >
               <Text>Title</Text>
             </ListItem>
           </List>
         </Glass>
         <Glass borderRadius={32} padding={16}>
-          <List type="plain" width={300}>
+          <List type="plain" width={400}>
             <ListItem
               subtitle={<Text>Subtitle</Text>}
               leadingAccessory={<BoxSelect height={16} width={16} />}
@@ -49,7 +56,6 @@ export default function ListPage() {
               <Text>Title</Text>
             </ListItem>
             <ListItem
-              subtitle={<Text>Subtitle</Text>}
               leadingAccessory={<BoxSelect height={16} width={16} />}
               trailingAccessory={
                 <IconButton size="xs" platter>
@@ -87,37 +93,44 @@ export default function ListPage() {
       </Container>
       <Container flexDirection="row" gapColumn={32}>
         <Glass borderRadius={32} padding={16}>
-          <List type="inset" width={300}>
+          <List type="inset" width={400}>
             <ListItem
               isFirst
               subtitle={<Text>Subtitle</Text>}
-              trailingAccessory={<ChevronRight height={12} width={12} />}
+              trailingAccessory={
+                <ChevronRight height={12} width={12} opacity={0.3} />
+              }
+            >
+              <Text>Title</Text>
+            </ListItem>
+            <ListItem
+              trailingAccessory={
+                <ChevronRight height={12} width={12} opacity={0.3} />
+              }
             >
               <Text>Title</Text>
             </ListItem>
             <ListItem
               subtitle={<Text>Subtitle</Text>}
-              trailingAccessory={<ChevronRight height={12} width={12} />}
-            >
-              <Text>Title</Text>
-            </ListItem>
-            <ListItem
-              subtitle={<Text>Subtitle</Text>}
-              trailingAccessory={<ChevronRight height={12} width={12} />}
+              trailingAccessory={
+                <ChevronRight height={12} width={12} opacity={0.3} />
+              }
             >
               <Text>Title</Text>
             </ListItem>
             <ListItem
               isLast
               subtitle={<Text>Subtitle</Text>}
-              trailingAccessory={<ChevronRight height={12} width={12} />}
+              trailingAccessory={
+                <ChevronRight height={12} width={12} opacity={0.3} />
+              }
             >
               <Text>Title</Text>
             </ListItem>
           </List>
         </Glass>
         <Glass borderRadius={32} padding={16}>
-          <List type="inset" width={300}>
+          <List type="inset" width={400}>
             <ListItem
               isFirst
               subtitle={<Text>Subtitle</Text>}
@@ -131,7 +144,6 @@ export default function ListPage() {
               <Text>Title</Text>
             </ListItem>
             <ListItem
-              subtitle={<Text>Subtitle</Text>}
               leadingAccessory={<BoxSelect height={16} width={16} />}
               trailingAccessory={
                 <IconButton size="xs" platter>
