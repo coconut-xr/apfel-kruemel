@@ -1,18 +1,11 @@
 import { Button, Glass, IconButton } from "@coconut-xr/apfel-kruemel";
-import { Container, RootContainer, Text } from "@coconut-xr/koestlich";
+import { Container, Text } from "@coconut-xr/koestlich";
 import { BoxSelect } from "@coconut-xr/lucide-koestlich";
 
 export default function ButtonPage() {
   return (
-    <RootContainer
-      anchorX="center"
-      anchorY="center"
-      precision={0.01}
-      flexDirection="row"
-      gapColumn={32}
-      alignItems="center"
-    >
-      <Glass color="#999" borderRadius={32} padding={24}>
+    <Container flexDirection="row" alignItems="center" gapColumn={32}>
+      <Glass borderRadius={32} padding={16}>
         <Container flexDirection="row" gapColumn={16}>
           <Container
             flexDirection="column"
@@ -234,6 +227,6 @@ export default function ButtonPage() {
           </Container>
         </Container>
       </Glass>
-    </RootContainer>
+    </Container>
   );
 }

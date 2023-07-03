@@ -19,7 +19,7 @@ export type GlassProps = Omit<
   color?: ColorRepresentation;
 };
 
-export function Glass({ color = "black", ...props }: GlassProps) {
+export function Glass({ color = "#999", ...props }: GlassProps) {
   return (
     <Container
       backgroundColor={color}
