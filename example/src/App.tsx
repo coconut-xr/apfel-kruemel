@@ -4,15 +4,19 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import { BrowserRouter, NavLink, Route, Routes } from "react-router-dom";
 import "./App.css";
-import ButtonsPage from "./pages/Buttons";
+import ButtonPage from "./pages/Button";
+import CheckboxPage from "./pages/Checkbox";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="container">
         <div className="tabs">
-          <NavLink to="/buttons" className="tab">
-            Buttons
+          <NavLink to="/button" className="tab">
+            Button
+          </NavLink>
+          <NavLink to="/checkbox" className="tab">
+            Checkbox
           </NavLink>
         </div>
         <div className="content">
@@ -24,7 +28,8 @@ function App() {
               <Scale>
                 <Suspense>
                   <Routes>
-                    <Route path="/buttons" element={<ButtonsPage />} />
+                    <Route path="/button" element={<ButtonPage />} />
+                    <Route path="/checkbox" element={<CheckboxPage />} />
                   </Routes>
                 </Suspense>
               </Scale>

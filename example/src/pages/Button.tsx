@@ -2,7 +2,7 @@ import { Button, Glass, IconButton } from "@coconut-xr/apfel-kruemel";
 import { Container, RootContainer, Text } from "@coconut-xr/koestlich";
 import { BoxSelect } from "@coconut-xr/lucide-koestlich";
 
-export default function ButtonsPage() {
+export default function ButtonPage() {
   return (
     <RootContainer
       anchorX="center"

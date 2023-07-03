@@ -32,5 +32,8 @@
   },
   "peerDependencies": {
     "@coconut-xr/koestlich": "^0.0.15"
+  },
+  "dependencies": {
+    "@coconut-xr/input": "^0.0.0"
   }
 }
