@@ -1,13 +1,35 @@
 import { Container } from "@coconut-xr/koestlich";
+import { makeBorderMaterial } from "@coconut-xr/xmaterials";
 import { ComponentPropsWithoutRef } from "react";
+import { ColorRepresentation, MeshPhongMaterial } from "three";
+
+const material = makeBorderMaterial(MeshPhongMaterial, {
+  specular: "#555",
+  shininess: 100,
+});
 
 export type GlassProps = Omit<
   ComponentPropsWithoutRef<typeof Container>,
-  "backgroundColor" | "backgroundOpacity"
->;
+  | "backgroundColor"
+  | "backgroundOpacity"
+  | "borderColor"
+  | "borderOpacity"
+  | "material"
+> & {
+  color?: ColorRepresentation;
+};
 
-export function Glass({ ...props }: GlassProps) {
+export function Glass({ color = "black", ...props }: GlassProps) {
   return (
-    <Container {...props} backgroundColor="white" backgroundOpacity={0.5} />
+    <Container
+      backgroundColor={color}
+      backgroundOpacity={0.8}
+      borderColor={color}
+      borderOpacity={0.8}
+      border={8}
+      borderBend={0.3}
+      material={material}
+      {...props}
+    />
   );
 }

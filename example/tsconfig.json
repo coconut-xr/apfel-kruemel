@@ -26,6 +26,6 @@
       "@coconut-xr/apfel-kruemel": ["../src"]
     }
   },
-  "include": ["src"],
+  "include": ["src", "../src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -11,18 +11,18 @@
 .tabs {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
 }
 
-.tab {
+.tabs a {
   border: none;
   background: none;
   padding: 1rem 1.5rem;
   font-size: 1rem;
   cursor: pointer;
   color: gray;
+  text-decoration: none;
 }
 
-.tab.active {
+.tabs a.active {
   color: black;
 }

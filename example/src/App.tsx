@@ -1,51 +1,35 @@
-import { Fonts } from "@coconut-xr/apfel-kruemel";
-import { RootContainer } from "@coconut-xr/koestlich";
-import { Environment } from "@react-three/drei";
+import { Fonts, Scale } from "@coconut-xr/apfel-kruemel";
+import { Environment, OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import clsx from "clsx";
-import { useState } from "react";
+import { BrowserRouter, NavLink, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Typography from "./pages/Typography";
-
-type Tab = "typography" | "colors";
+import ButtonsPage from "./pages/Buttons";
 
 function App() {
-  const [currentTab, setCurrentTab] = useState<Tab>("typography");
-
   return (
-    <div className="container">
-      <div className="tabs">
-        <button
-          className={clsx("tab", currentTab === "typography" && "active")}
-          onClick={() => setCurrentTab("typography")}
-        >
-          Typography
-        </button>
-        <button
-          className={clsx("tab", currentTab === "colors" && "active")}
-          onClick={() => setCurrentTab("colors")}
-        >
-          Colors
-        </button>
+    <BrowserRouter>
+      <div className="container">
+        <div className="tabs">
+          <NavLink to="/buttons" className="tab">
+            Buttons
+          </NavLink>
+        </div>
+        <div className="content">
+          <Canvas>
+            <Environment files="/apartment_4k.hdr" background />
+            <pointLight position={[1, 2, 3]} />
+            <OrbitControls />
+            <Fonts>
+              <Scale>
+                <Routes>
+                  <Route path="/buttons" element={<ButtonsPage />} />
+                </Routes>
+              </Scale>
+            </Fonts>
+          </Canvas>
+        </div>
       </div>
-      <div className="content">
-        <Canvas>
-          <Environment files="/apartment_4k.hdr" background />
-          <Fonts>
-            <group scale={1 / 200}>
-              <RootContainer
-                anchorX="center"
-                anchorY="center"
-                width={1920}
-                height={1080}
-              >
-                <Typography />
-              </RootContainer>
-            </group>
-          </Fonts>
-        </Canvas>
-      </div>
-    </div>
+    </BrowserRouter>
   );
 }
 
