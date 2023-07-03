@@ -4,17 +4,17 @@ import { ComponentPropsWithoutRef, useState } from "react";
 
 type CheckboxProps = ComponentPropsWithoutRef<typeof Container> & {
   selected?: boolean;
-  initialSelected?: boolean;
+  defaultSelected?: boolean;
   onSelectedChange?(value: boolean): void;
 };
 
 export function Checkbox({
   selected,
-  initialSelected,
+  defaultSelected,
   onSelectedChange,
   ...props
 }: CheckboxProps) {
-  const [internalValue, setInternalValue] = useState(initialSelected ?? false);
+  const [internalValue, setInternalValue] = useState(defaultSelected ?? false);
   const value = selected != null ? selected : internalValue;
 
   function toggle() {

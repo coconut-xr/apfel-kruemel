@@ -9,6 +9,7 @@ import ButtonPage from "./pages/Button";
 import CheckboxPage from "./pages/Checkbox";
 import InputPage from "./pages/Input";
 import ListPage from "./pages/List";
+import TabsPage from "./pages/Tabs";
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
           </NavLink>
           <NavLink to="/list" className="tab">
             List
+          </NavLink>
+          <NavLink to="/tabs" className="tab">
+            Tabs
           </NavLink>
         </div>
         <div className="content">
@@ -46,6 +50,7 @@ function App() {
                       <Route path="/checkbox" element={<CheckboxPage />} />
                       <Route path="/input" element={<InputPage />} />
                       <Route path="/list" element={<ListPage />} />
+                      <Route path="/tabs" element={<TabsPage />} />
                     </Routes>
                   </Suspense>
                 </RootContainer>
