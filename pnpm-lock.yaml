@@ -7,15 +7,15 @@ settings:
 dependencies:
   '@coconut-xr/input':
     specifier: ^0.0.0
-    version: 0.0.0(@coconut-xr/koestlich@0.1.1)
+    version: 0.0.0(@coconut-xr/koestlich@0.1.2)
 
 devDependencies:
   '@coconut-xr/koestlich':
-    specifier: ^0.1.1
-    version: 0.1.1(@react-three/fiber@8.13.4)(react@18.2.0)(three-stdlib@2.23.10)(three@0.153.0)
+    specifier: ^0.1.2
+    version: 0.1.2(@react-three/fiber@8.13.4)(react@18.2.0)(three-stdlib@2.23.10)(three@0.153.0)
   '@coconut-xr/lucide-koestlich':
     specifier: ^0.0.2
-    version: 0.0.2(@coconut-xr/koestlich@0.1.1)(react@18.2.0)
+    version: 0.0.2(@coconut-xr/koestlich@0.1.2)(react@18.2.0)
   '@coconut-xr/xmaterials':
     specifier: ^0.0.3
     version: 0.0.3(three@0.153.0)
@@ -117,16 +117,16 @@ packages:
     dependencies:
       three: 0.153.0
 
-  /@coconut-xr/input@0.0.0(@coconut-xr/koestlich@0.1.1):
+  /@coconut-xr/input@0.0.0(@coconut-xr/koestlich@0.1.2):
     resolution: {integrity: sha512-8mWxoYhBt9pryIeVfzE4B02O7FHgp5XamwXFAyGBFg4HGZD1j9tQ02vSByRNMwZiQamNf02r5K+/rqxYbg6znQ==}
     peerDependencies:
       '@coconut-xr/koestlich': '*'
     dependencies:
-      '@coconut-xr/koestlich': 0.1.1(@react-three/fiber@8.13.4)(react@18.2.0)(three-stdlib@2.23.10)(three@0.153.0)
+      '@coconut-xr/koestlich': 0.1.2(@react-three/fiber@8.13.4)(react@18.2.0)(three-stdlib@2.23.10)(three@0.153.0)
     dev: false
 
-  /@coconut-xr/koestlich@0.1.1(@react-three/fiber@8.13.4)(react@18.2.0)(three-stdlib@2.23.10)(three@0.153.0):
-    resolution: {integrity: sha512-Aip0a4on6NT7TiPxhyM5uEp2q0h/ttvlLxYyBibLaORTrumG55CZSgHNW1b6WauOP2eqczusaCW5Uxif5zUmhg==}
+  /@coconut-xr/koestlich@0.1.2(@react-three/fiber@8.13.4)(react@18.2.0)(three-stdlib@2.23.10)(three@0.153.0):
+    resolution: {integrity: sha512-Ous9ZBpvklpQmSySeFwg2LlJrvR0vSWRPbqxjwrfe5PHzgYWv2YUwD0Sn03WH+7o0gkJL0zzpF3DjMVm57rrOQ==}
     peerDependencies:
       '@react-three/fiber': '*'
       react: '*'
@@ -141,13 +141,13 @@ packages:
       three: 0.153.0
       three-stdlib: 2.23.10(three@0.153.0)
 
-  /@coconut-xr/lucide-koestlich@0.0.2(@coconut-xr/koestlich@0.1.1)(react@18.2.0):
+  /@coconut-xr/lucide-koestlich@0.0.2(@coconut-xr/koestlich@0.1.2)(react@18.2.0):
     resolution: {integrity: sha512-70AFEDc0kONEzdRODonwOlrPXnBQC8Hn312Gcex97cGAXq5GhldI4AtObJaEpbfrCsxUsuAEB4Z9GyEZq6liWg==}
     peerDependencies:
       '@coconut-xr/koestlich': '*'
       react: '*'
     dependencies:
-      '@coconut-xr/koestlich': 0.1.1(@react-three/fiber@8.13.4)(react@18.2.0)(three-stdlib@2.23.10)(three@0.153.0)
+      '@coconut-xr/koestlich': 0.1.2(@react-three/fiber@8.13.4)(react@18.2.0)(three-stdlib@2.23.10)(three@0.153.0)
       react: 18.2.0
     dev: true
 

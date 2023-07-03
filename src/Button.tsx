@@ -50,6 +50,7 @@ export function Button({
     >
       <DefaultStyleProvider<TextProperties>
         color={selected && !disabled ? "black" : "white"}
+        opacity={disabled ? 0.4 : 1}
       >
         {children}
       </DefaultStyleProvider>

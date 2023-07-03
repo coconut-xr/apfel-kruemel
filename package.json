@@ -14,7 +14,7 @@
     "build": "parcel build"
   },
   "devDependencies": {
-    "@coconut-xr/koestlich": "^0.1.1",
+    "@coconut-xr/koestlich": "^0.1.2",
     "@coconut-xr/lucide-koestlich": "^0.0.2",
     "@coconut-xr/xmaterials": "^0.0.3",
     "@react-three/drei": "^9.77.10",

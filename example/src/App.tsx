@@ -8,6 +8,7 @@ import "./App.css";
 import ButtonPage from "./pages/Button";
 import CheckboxPage from "./pages/Checkbox";
 import InputPage from "./pages/Input";
+import ListPage from "./pages/List";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
           </NavLink>
           <NavLink to="/input" className="tab">
             Input
+          </NavLink>
+          <NavLink to="/list" className="tab">
+            List
           </NavLink>
         </div>
         <div className="content">
@@ -41,6 +45,7 @@ function App() {
                       <Route path="/button" element={<ButtonPage />} />
                       <Route path="/checkbox" element={<CheckboxPage />} />
                       <Route path="/input" element={<InputPage />} />
+                      <Route path="/list" element={<ListPage />} />
                     </Routes>
                   </Suspense>
                 </RootContainer>
