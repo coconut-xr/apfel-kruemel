@@ -6,4 +6,5 @@ export * from "./IconButton";
 export * from "./Input";
 export * from "./List";
 export * from "./Scale";
+export * from "./Slider";
 export * from "./Tabs";

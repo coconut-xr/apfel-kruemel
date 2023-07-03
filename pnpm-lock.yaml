@@ -16,6 +16,12 @@ devDependencies:
   '@coconut-xr/lucide-koestlich':
     specifier: ^0.0.2
     version: 0.0.2(@coconut-xr/koestlich@0.1.2)(react@18.2.0)
+  '@coconut-xr/natuerlich':
+    specifier: ^0.0.6
+    version: 0.0.6(react@18.2.0)(three-stdlib@2.23.10)(three@0.153.0)(zustand@3.7.2)
+  '@coconut-xr/xinteraction':
+    specifier: ^0.0.7
+    version: 0.0.7(three@0.153.0)
   '@coconut-xr/xmaterials':
     specifier: ^0.0.3
     version: 0.0.3(three@0.153.0)
@@ -149,6 +155,32 @@ packages:
     dependencies:
       '@coconut-xr/koestlich': 0.1.2(@react-three/fiber@8.13.4)(react@18.2.0)(three-stdlib@2.23.10)(three@0.153.0)
       react: 18.2.0
+    dev: true
+
+  /@coconut-xr/natuerlich@0.0.6(react@18.2.0)(three-stdlib@2.23.10)(three@0.153.0)(zustand@3.7.2):
+    resolution: {integrity: sha512-0n7XpIbmgRSIuVub8PIp/2FMzHt0dZIR8NRGzsBhA22GN3QG3SjtVXZ7jIgqRYJN6jM2Swdm8zykDUjUtR+0yQ==}
+    peerDependencies:
+      react: '*'
+      three: '>=0.153.0'
+      three-stdlib: '*'
+      zustand: '*'
+    dependencies:
+      '@coconut-xr/xinteraction': 0.0.7(three@0.153.0)
+      '@webxr-input-profiles/motion-controllers': 1.0.0
+      meshline: 3.1.6(three@0.153.0)
+      react: 18.2.0
+      suspend-react: 0.0.9(react@18.2.0)
+      three: 0.153.0
+      three-stdlib: 2.23.10(three@0.153.0)
+      zustand: 3.7.2(react@18.2.0)
+    dev: true
+
+  /@coconut-xr/xinteraction@0.0.7(three@0.153.0):
+    resolution: {integrity: sha512-hLyzqlBf7b1NPTHV/NTF277E3k/N/QgNJVRAUrBRdYVb40iRZ9J3lH4uK09IypAKXa8Yrsitsn5DGsliFLdelA==}
+    peerDependencies:
+      three: '*'
+    dependencies:
+      three: 0.153.0
     dev: true
 
   /@coconut-xr/xmaterials@0.0.3(three@0.153.0):
@@ -1285,6 +1317,10 @@ packages:
       react: 18.2.0
     dev: true
 
+  /@webxr-input-profiles/motion-controllers@1.0.0:
+    resolution: {integrity: sha512-Ppxde+G1/QZbU8ShCQg+eq5VtlcL/FPkerF1dkDOLlIml0LJD1tFqnCZYR0SrHzYleIQ2siRnOx7xbFLaCpExQ==}
+    dev: true
+
   /abortcontroller-polyfill@1.7.5:
     resolution: {integrity: sha512-JMJ5soJWP18htbbxJjG7bG6yuI6pRhgJ0scHHTfkUjf6wjP912xZWvM+A4sJK3gqd9E8fcPbDnOefbA9Th/FIQ==}
     dev: true
@@ -2245,6 +2281,14 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       has-flag: 4.0.0
+    dev: true
+
+  /suspend-react@0.0.9(react@18.2.0):
+    resolution: {integrity: sha512-668Pxy4z54fhjpnPqw6olj3vvpV03VywFNXazyNSYSTuHaRw3NJJjO5l8R49AUk5fMTkJXGVGaaVSgdaO01S3w==}
+    peerDependencies:
+      react: '>=17.0'
+    dependencies:
+      react: 18.2.0
     dev: true
 
   /suspend-react@0.1.3(react@18.2.0):

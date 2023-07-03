@@ -9,6 +9,7 @@
   "keywords": [],
   "author": "Pascal Zinke",
   "license": "SEE LICENSE IN LICENSE",
+  "type": "module",
   "scripts": {
     "watch": "parcel watch",
     "build": "parcel build"
@@ -16,6 +17,8 @@
   "devDependencies": {
     "@coconut-xr/koestlich": "^0.1.2",
     "@coconut-xr/lucide-koestlich": "^0.0.2",
+    "@coconut-xr/natuerlich": "^0.0.6",
+    "@coconut-xr/xinteraction": "^0.0.7",
     "@coconut-xr/xmaterials": "^0.0.3",
     "@react-three/drei": "^9.77.10",
     "@react-three/fiber": "^8.13.3",
