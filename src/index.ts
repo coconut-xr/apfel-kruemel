@@ -9,4 +9,5 @@ export * from "./ProgressIndicator";
 export * from "./Scale";
 export * from "./SegmentedControl";
 export * from "./Slider";
+export * from "./TabBar";
 export * from "./TextInput";

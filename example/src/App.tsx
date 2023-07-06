@@ -13,6 +13,7 @@ import ListsPage from "./pages/Lists";
 import ProgressIndicatorsPage from "./pages/ProgressIndicators";
 import SegmentedControlsPage from "./pages/SegmentedControls";
 import SlidersPage from "./pages/Sliders";
+import TabBarsPage from "./pages/TabBars";
 
 function App() {
   return (
@@ -39,6 +40,9 @@ function App() {
           </NavLink>
           <NavLink to="/progress-indicators" className="tab">
             ProgressIndicators
+          </NavLink>
+          <NavLink to="/tab-bars" className="tab">
+            TabBars
           </NavLink>
         </div>
         <div className="content">
@@ -72,6 +76,7 @@ function App() {
                         path="/progress-indicators"
                         element={<ProgressIndicatorsPage />}
                       />
+                      <Route path="/tab-bars" element={<TabBarsPage />} />
                     </Routes>
                   </Suspense>
                 </RootContainer>
