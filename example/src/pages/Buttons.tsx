@@ -2,7 +2,7 @@ import { Button, Glass, IconButton } from "@coconut-xr/apfel-kruemel";
 import { Container, Text } from "@coconut-xr/koestlich";
 import { BoxSelect } from "@coconut-xr/lucide-koestlich";
 
-export default function ButtonPage() {
+export default function ButtonsPage() {
   return (
     <Container flexDirection="row" alignItems="center" gapColumn={32}>
       <Glass borderRadius={32} padding={16}>

@@ -104,6 +104,12 @@ export function Slider({
       borderRadius={height / 2}
       backgroundColor="#444"
       backgroundOpacity={0.4}
+      positionType="relative"
+      borderColor="#444"
+      borderOpacity={0.4}
+      border={2}
+      borderBend={-0.3}
+      material={material}
       {...props}
       onPointerDown={(e) => {
         startSlide(e);
@@ -126,40 +132,42 @@ export function Slider({
         props.onPointerLeave?.(e);
       }}
     >
-      <Container
-        width={width}
-        minWidth={height}
-        height="100%"
-        borderRadius={height / 2}
-        backgroundOpacity={disabled ? 0.25 : 0.6}
-      >
-        {showIcon && (
-          <Container
-            width={height}
-            height={height}
-            alignItems="center"
-            justifyContent="center"
-          >
-            <DefaultStyleProvider
-              color="white"
-              width={iconHeight}
-              height={iconHeight}
-              opacity={disabled ? 0.4 : 1}
-            >
-              {icon}
-            </DefaultStyleProvider>
-          </Container>
-        )}
+      <Container positionType="absolute" inset={-2}>
         <Container
-          positionType="absolute"
-          height={knobHeight}
-          width={knobHeight}
-          borderRadius={knobHeight / 2}
-          positionTop={knobPadding}
-          positionRight={knobPadding}
-          backgroundColor="white"
-          backgroundOpacity={!disabled && hoverCount > 0 ? 1 : 0}
-        />
+          width={width}
+          minWidth={height}
+          height="100%"
+          borderRadius={height / 2}
+          backgroundOpacity={disabled ? 0.25 : 0.6}
+        >
+          {showIcon && (
+            <Container
+              width={height}
+              height={height}
+              alignItems="center"
+              justifyContent="center"
+            >
+              <DefaultStyleProvider
+                color="white"
+                width={iconHeight}
+                height={iconHeight}
+                opacity={disabled ? 0.4 : 1}
+              >
+                {icon}
+              </DefaultStyleProvider>
+            </Container>
+          )}
+          <Container
+            positionType="absolute"
+            height={knobHeight}
+            width={knobHeight}
+            borderRadius={knobHeight / 2}
+            positionTop={knobPadding}
+            positionRight={knobPadding}
+            backgroundColor="white"
+            backgroundOpacity={!disabled && hoverCount > 0 ? 1 : 0}
+          />
+        </Container>
       </Container>
     </Container>
   );

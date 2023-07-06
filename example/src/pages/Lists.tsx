@@ -2,7 +2,7 @@ import { Glass, IconButton, List, ListItem } from "@coconut-xr/apfel-kruemel";
 import { Container, Text } from "@coconut-xr/koestlich";
 import { BoxSelect, ChevronRight, Info } from "@coconut-xr/lucide-koestlich";
 
-export default function ListPage() {
+export default function ListsPage() {
   return (
     <Container flexDirection="column" gapRow={32}>
       <Container flexDirection="row" gapColumn={32}>

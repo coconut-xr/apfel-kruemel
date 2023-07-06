@@ -6,35 +6,39 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import { BrowserRouter, NavLink, Route, Routes } from "react-router-dom";
 import "./App.css";
-import ButtonPage from "./pages/Button";
-import CheckboxPage from "./pages/Checkbox";
-import InputPage from "./pages/Input";
-import ListPage from "./pages/List";
-import SliderPage from "./pages/Slider";
-import TabsPage from "./pages/Tabs";
+import ButtonsPage from "./pages/Buttons";
+import CheckboxesPage from "./pages/Checkboxes";
+import InputFieldsPage from "./pages/InputFields";
+import ListsPage from "./pages/Lists";
+import ProgressIndicatorsPage from "./pages/ProgressIndicators";
+import SegmentedControlsPage from "./pages/SegmentedControls";
+import SlidersPage from "./pages/Sliders";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="container">
         <div className="tabs">
-          <NavLink to="/button" className="tab">
-            Button
+          <NavLink to="/buttons" className="tab">
+            Buttons
           </NavLink>
-          <NavLink to="/checkbox" className="tab">
-            Checkbox
+          <NavLink to="/checkboxes" className="tab">
+            Checkboxes
           </NavLink>
-          <NavLink to="/input" className="tab">
-            Input
+          <NavLink to="/input-fields" className="tab">
+            InputFields
           </NavLink>
-          <NavLink to="/list" className="tab">
-            List
+          <NavLink to="/lists" className="tab">
+            Lists
           </NavLink>
-          <NavLink to="/tabs" className="tab">
-            Tabs
+          <NavLink to="/segmented-controls" className="tab">
+            SegmentedControls
           </NavLink>
-          <NavLink to="/slider" className="tab">
-            Slider
+          <NavLink to="/sliders" className="tab">
+            Sliders
+          </NavLink>
+          <NavLink to="/progress-indicators" className="tab">
+            ProgressIndicators
           </NavLink>
         </div>
         <div className="content">
@@ -52,12 +56,22 @@ function App() {
                 >
                   <Suspense>
                     <Routes>
-                      <Route path="/button" element={<ButtonPage />} />
-                      <Route path="/checkbox" element={<CheckboxPage />} />
-                      <Route path="/input" element={<InputPage />} />
-                      <Route path="/list" element={<ListPage />} />
-                      <Route path="/tabs" element={<TabsPage />} />
-                      <Route path="/slider" element={<SliderPage />} />
+                      <Route path="/buttons" element={<ButtonsPage />} />
+                      <Route path="/checkboxes" element={<CheckboxesPage />} />
+                      <Route
+                        path="/input-fields"
+                        element={<InputFieldsPage />}
+                      />
+                      <Route path="/lists" element={<ListsPage />} />
+                      <Route
+                        path="/segmented-controls"
+                        element={<SegmentedControlsPage />}
+                      />
+                      <Route path="/sliders" element={<SlidersPage />} />
+                      <Route
+                        path="/progress-indicators"
+                        element={<ProgressIndicatorsPage />}
+                      />
                     </Routes>
                   </Suspense>
                 </RootContainer>

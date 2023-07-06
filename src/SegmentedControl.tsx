@@ -20,28 +20,30 @@ const material = makeBorderMaterial(MeshPhongMaterial, {
   shininess: 50,
 });
 
-type TabsProps<T> = ComponentPropsWithoutRef<typeof Container> & {
+type SegmentedControlProps<T> = ComponentPropsWithoutRef<typeof Container> & {
   value?: T;
   defaultValue?: T;
   onValueChange?(value: T): void;
   disabled?: boolean;
 };
 
-type TabsContext<T> = {
+type SegmentedControlContext<T> = {
   value?: T;
   onValueChange?(value: T): void;
   disabled?: boolean;
 };
 
-const TabsContext = createContext<TabsContext<unknown>>({});
+const SegmentedControlContext = createContext<SegmentedControlContext<unknown>>(
+  {},
+);
 
-export function Tabs<T>({
+export function SegmentedControl<T>({
   value,
   defaultValue,
   onValueChange,
   disabled,
   ...props
-}: TabsProps<T>) {
+}: SegmentedControlProps<T>) {
   const [internalValue, setInternalValue] = useState<T | undefined>(
     defaultValue,
   );
@@ -52,7 +54,7 @@ export function Tabs<T>({
     onValueChange?.(value);
   }, []);
 
-  const context = useMemo<TabsContext<T>>(
+  const context = useMemo<SegmentedControlContext<T>>(
     () => ({ value: currentValue, onValueChange: onChange, disabled }),
     [currentValue, onChange, disabled],
   );
@@ -60,7 +62,7 @@ export function Tabs<T>({
   const opacity = disabled ? 0.3 : 0.4;
 
   return (
-    <TabsContext.Provider value={context}>
+    <SegmentedControlContext.Provider value={context}>
       <Container
         height={36}
         backgroundColor="#444"
@@ -74,21 +76,28 @@ export function Tabs<T>({
         flexDirection="row"
         {...props}
       />
-    </TabsContext.Provider>
+    </SegmentedControlContext.Provider>
   );
 }
 
-type TabProps<T> = ComponentPropsWithoutRef<typeof Container> & {
+type SegmentedControlButtonProps<T> = ComponentPropsWithoutRef<
+  typeof Container
+> & {
   value: T;
   disabled?: boolean;
 };
 
-export function Tab<T>({ children, value, disabled, ...props }: TabProps<T>) {
+export function SegmentedControlButton<T>({
+  children,
+  value,
+  disabled,
+  ...props
+}: SegmentedControlButtonProps<T>) {
   const {
     value: currentValue,
     onValueChange,
     disabled: tabsDisabled,
-  } = useContext(TabsContext) as TabsContext<T>;
+  } = useContext(SegmentedControlContext) as SegmentedControlContext<T>;
 
   const { id } = useBaseNodeContext();
 

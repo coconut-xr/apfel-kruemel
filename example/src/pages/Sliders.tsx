@@ -2,7 +2,7 @@ import { Glass, Slider } from "@coconut-xr/apfel-kruemel";
 import { Container } from "@coconut-xr/koestlich";
 import { BoxSelect } from "@coconut-xr/lucide-koestlich";
 
-export default function SliderPage() {
+export default function SlidersPage() {
   return (
     <Glass borderRadius={32} padding={16} flexDirection="row" gapColumn={16}>
       <Container flexDirection="column" gapRow={16} width={250}>

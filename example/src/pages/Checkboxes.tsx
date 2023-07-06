@@ -1,6 +1,6 @@
 import { Checkbox, Glass } from "@coconut-xr/apfel-kruemel";
 
-export default function CheckboxPage() {
+export default function CheckboxesPage() {
   return (
     <Glass borderRadius={32} padding={16} flexDirection="column" gapRow={16}>
       <Checkbox defaultSelected={false} />

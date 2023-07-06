@@ -5,7 +5,7 @@ import { MeshPhongMaterial } from "three";
 
 type Style = "pill" | "rect";
 
-type InputProps = ComponentPropsWithoutRef<typeof Container> & {
+type TextInputProps = ComponentPropsWithoutRef<typeof Container> & {
   style?: Style;
   disabled?: boolean;
   placeholder?: string;
@@ -17,13 +17,13 @@ const material = makeBorderMaterial(MeshPhongMaterial, {
   shininess: 50,
 });
 
-export function Input({
+export function TextInput({
   style = "rect",
   disabled,
   placeholder,
   prefix,
   ...props
-}: InputProps) {
+}: TextInputProps) {
   const [hoverCount, setHoverCount] = useState(0);
 
   const opacity = disabled ? 0.3 : hoverCount > 0 ? 0.2 : 0.4;
