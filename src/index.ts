@@ -5,6 +5,7 @@ export * from "./Fonts";
 export * from "./Glass";
 export * from "./IconButton";
 export * from "./List";
+export * from "./ProgressIndicator";
 export * from "./Scale";
 export * from "./SegmentedControl";
 export * from "./Slider";
