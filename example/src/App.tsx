@@ -48,7 +48,7 @@ function App() {
         <div className="content">
           <Canvas events={noEvents}>
             <Environment files="/apartment_4k.hdr" background />
-            <pointLight position={[-3, 3, 3]} />
+            <directionalLight position={[-2, 2, 2]} intensity={0.8} />
             <OrbitControls enableRotate={false} />
             <XWebPointers />
             <Fonts>

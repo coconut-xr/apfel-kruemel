@@ -39,7 +39,7 @@ export function TextInput({
       borderRadius={style === "pill" ? 22 : 12}
       backgroundColor="#444"
       backgroundOpacity={opacity}
-      border={3}
+      border={2}
       borderColor="#444"
       borderOpacity={opacity}
       borderBend={disabled ? 0 : -0.3}

@@ -109,7 +109,7 @@ export function SegmentedControlButton<T>({
       {...props}
       onClick={(e) => {
         if (disabled) return;
-        onValueChange(value);
+        onValueChange?.(value);
         props.onClick?.(e);
       }}
     >
