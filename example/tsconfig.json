@@ -7,7 +7,7 @@
     "skipLibCheck": true,
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
+    "moduleResolution": "NodeNext",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -22,10 +22,7 @@
 
     /* Paths */
     "baseUrl": ".",
-    "paths": {
-      "@coconut-xr/apfel-kruemel": ["../src"]
-    }
   },
-  "include": ["src", "../src"],
+  "include": ["src/*"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

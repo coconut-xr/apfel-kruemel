@@ -6,14 +6,14 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import { BrowserRouter, NavLink, Route, Routes } from "react-router-dom";
 import "./App.css";
-import ButtonsPage from "./pages/Buttons";
-import CheckboxesPage from "./pages/Checkboxes";
-import InputFieldsPage from "./pages/InputFields";
-import ListsPage from "./pages/Lists";
-import ProgressIndicatorsPage from "./pages/ProgressIndicators";
-import SegmentedControlsPage from "./pages/SegmentedControls";
-import SlidersPage from "./pages/Sliders";
-import TabBarsPage from "./pages/TabBars";
+import ButtonsPage from "./pages/Buttons.js";
+import CheckboxesPage from "./pages/Checkboxes.js";
+import InputFieldsPage from "./pages/InputFields.js";
+import ListsPage from "./pages/Lists.js";
+import ProgressIndicatorsPage from "./pages/ProgressIndicators.js";
+import SegmentedControlsPage from "./pages/SegmentedControls.js";
+import SlidersPage from "./pages/Sliders.js";
+import TabBarsPage from "./pages/TabBars.js";
 
 function App() {
   return (
