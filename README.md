@@ -1,3 +1,3 @@
-# Apfel Kruemel
+# @coconut-xr/apfel-kruemel
 
-Component library for Apple's Spatial User Interfaces.
+Pre-Designed Component Library for Spatial User Interfaces

@@ -16,7 +16,7 @@
     "type": "git",
     "url": "git@github.com:coconut-xr/apfel-kruemel.git"
   },
-  "description": "Component Library for Apples Spatial User Interfaces",
+  "description": "Pre-Designed Component Library for Spatial User Interfaces",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "Pascal Zinke",
