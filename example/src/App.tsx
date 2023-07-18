@@ -4,7 +4,7 @@ import { XWebPointers, noEvents } from "@coconut-xr/xinteraction/react";
 import { Environment, OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
-import { BrowserRouter, NavLink, Route, Routes } from "react-router-dom";
+import { HashRouter, NavLink, Route, Routes, Navigate } from "react-router-dom";
 import "./App.css";
 import ButtonsPage from "./pages/Buttons.js";
 import CheckboxesPage from "./pages/Checkboxes.js";
@@ -17,7 +17,7 @@ import TabBarsPage from "./pages/TabBars.js";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="container">
         <div className="tabs">
           <NavLink to="/buttons" className="tab">
@@ -47,7 +47,7 @@ function App() {
         </div>
         <div className="content">
           <Canvas events={noEvents}>
-            <Environment files="/apartment_4k.hdr" background />
+            <Environment files="apartment_4k.hdr" background />
             <directionalLight position={[-2, 2, 2]} intensity={0.8} />
             <OrbitControls enableRotate={false} />
             <XWebPointers />
@@ -60,6 +60,7 @@ function App() {
                 >
                   <Suspense>
                     <Routes>
+                      <Route path="/" element={<Navigate to="/buttons" />} />
                       <Route path="/buttons" element={<ButtonsPage />} />
                       <Route path="/checkboxes" element={<CheckboxesPage />} />
                       <Route
@@ -85,7 +86,7 @@ function App() {
           </Canvas>
         </div>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

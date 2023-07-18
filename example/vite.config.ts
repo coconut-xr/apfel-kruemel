@@ -8,4 +8,8 @@ export default defineConfig({
   resolve: {
     dedupe: ["three"],
   },
+  base: "/apfel-kruemel/",
+  server: {
+    fs: { strict: false },
+  },
 });
