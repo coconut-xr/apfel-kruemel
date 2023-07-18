@@ -1,0 +1,87 @@
+name: Deployment
+
+on:
+    push:
+        branches: [main]
+
+jobs:
+    examples:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v3
+
+            - name: Install and Build
+              run: |
+                  npm install
+                  npm run build
+
+            - name: Install and Build examples
+              working-directory: example
+              run: |
+                  npm ci --legacy-peer-deps
+                  npm run build
+
+            - name: Deploy
+              uses: JamesIves/github-pages-deploy-action@4.1.5
+              with:
+                  branch: gh-pages
+                  folder: example/dist
+    publish-npm-package:
+        runs-on: ubuntu-latest
+        permissions:
+          contents: read
+          packages: write 
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v3
+
+            - name: Setup Node
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 18
+                  registry-url: https://registry.npmjs.org/
+
+            - name: Install Dependencies
+              run: npm install
+
+            - name: Check
+              run: npm run check
+
+            - name: Build
+              run: npm run build
+
+            - name: Deploy
+              run: npm publish --access public
+              env:
+                NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+    publish-github-package:
+        runs-on: ubuntu-latest
+        permissions:
+          contents: read
+          packages: write 
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v3
+
+            - name: Setup Node
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 18
+                  registry-url: https://npm.pkg.github.com/
+
+            - name: Install Dependencies
+              run: npm install
+              env:
+                NODE_AUTH_TOKEN: ${{ secrets.PRIVATE_GITHUB_TOKEN }}
+
+            - name: Check
+              run: npm run check
+
+            - name: Build
+              run: npm run build
+
+            - name: Deploy
+              run: npm publish
+              env:
+                NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

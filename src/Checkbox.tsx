@@ -8,12 +8,7 @@ type CheckboxProps = ComponentPropsWithoutRef<typeof Container> & {
   onSelectedChange?(value: boolean): void;
 };
 
-export function Checkbox({
-  selected,
-  defaultSelected,
-  onSelectedChange,
-  ...props
-}: CheckboxProps) {
+export function Checkbox({ selected, defaultSelected, onSelectedChange, ...props }: CheckboxProps) {
   const [internalValue, setInternalValue] = useState(defaultSelected ?? false);
   const value = selected != null ? selected : internalValue;
 

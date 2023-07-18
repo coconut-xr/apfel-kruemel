@@ -10,11 +10,7 @@ const material = makeBorderMaterial(MeshPhongMaterial, {
 
 export type GlassProps = Omit<
   ComponentPropsWithoutRef<typeof Container>,
-  | "backgroundColor"
-  | "backgroundOpacity"
-  | "borderColor"
-  | "borderOpacity"
-  | "material"
+  "backgroundColor" | "backgroundOpacity" | "borderColor" | "borderOpacity" | "material"
 > & {
   color?: ColorRepresentation;
 };

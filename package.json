@@ -1,18 +1,38 @@
 {
   "name": "@coconut-xr/apfel-kruemel",
-  "version": "1.0.0",
+  "version": "0.0.0",
+  "homepage": "https://github.com/coconut-xr/apfel-kruemel",
+  "keywords": [
+    "r3f",
+    "three.js",
+    "userinterface",
+    "react",
+    "typescript",
+    "components",
+    "design",
+    "spatial"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:coconut-xr/apfel-kruemel.git"
+  },
   "description": "Component Library for Apples Spatial User Interfaces",
-  "source": "src/index.ts",
-  "main": "dist/main.js",
-  "module": "dist/module.js",
-  "types": "dist/types.d.ts",
-  "keywords": [],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "author": "Pascal Zinke",
   "license": "SEE LICENSE IN LICENSE",
   "type": "module",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "watch": "parcel watch",
-    "build": "parcel build"
+    "build": "tsc",
+    "check": "run-s check:prettier check:eslint",
+    "check:prettier": "prettier --check 'src/**/*.{ts,tsx}'",
+    "check:eslint": "eslint src",
+    "fix": "run-s fix:prettier fix:eslint",
+    "fix:prettier": "prettier --write 'src/**/*.{ts,tsx}'",
+    "fix:eslint": "eslint src --fix"
   },
   "devDependencies": {
     "@coconut-xr/koestlich": "^0.1.2",
@@ -24,19 +44,28 @@
     "@react-three/fiber": "^8.13.3",
     "@types/react": "^18.2.14",
     "@types/three": "^0.152.1",
-    "clsx": "^1.2.1",
-    "parcel": "^2.9.3",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.8.8",
     "prettier-plugin-organize-imports": "^3.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.1",
-    "three": "0.153.0"
+    "three": "0.153.0",
+    "typescript": "^5.1.6"
   },
   "peerDependencies": {
-    "@coconut-xr/koestlich": "^0.0.15"
+    "@coconut-xr/koestlich": "*",
+    "@react-three/fiber": "*",
+    "react": "*",
+    "three": "*"
   },
   "dependencies": {
-    "@coconut-xr/input": "^0.0.0"
+    "@coconut-xr/lucide-koestlich": "^0.0.2"
   }
 }

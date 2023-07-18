@@ -5,10 +5,7 @@ type ProgressIndicatorProps = ComponentPropsWithoutRef<typeof Container> & {
   value?: number;
 };
 
-export function ProgressIndicator({
-  value = 0,
-  ...props
-}: ProgressIndicatorProps) {
+export function ProgressIndicator({ value = 0, ...props }: ProgressIndicatorProps) {
   return (
     <Container
       width="100%"

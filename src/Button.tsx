@@ -1,8 +1,4 @@
-import {
-  Container,
-  DefaultStyleProvider,
-  TextProperties,
-} from "@coconut-xr/koestlich";
+import { Container, DefaultStyleProvider, TextProperties } from "@coconut-xr/koestlich";
 import { ComponentPropsWithoutRef, useState } from "react";
 
 type Size = "sm" | "md" | "lg";
@@ -35,9 +31,7 @@ export function Button({
       borderRadius={style === "pill" ? height / 2 : getBorderRadius(size)}
       justifyContent="center"
       backgroundColor="white"
-      backgroundOpacity={
-        disabled ? 0.1 : selected ? 1 : hoverCount > 0 ? 0.3 : platter ? 0.2 : 0
-      }
+      backgroundOpacity={disabled ? 0.1 : selected ? 1 : hoverCount > 0 ? 0.3 : platter ? 0.2 : 0}
       {...props}
       onPointerEnter={(e) => {
         setHoverCount((current) => current + 1);

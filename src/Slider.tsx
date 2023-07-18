@@ -36,7 +36,7 @@ export function Slider({
   defaultValue,
   onValueChange,
   range = 10,
-  size,
+  size = "md",
   icon,
   disabled,
   ...props
@@ -71,9 +71,7 @@ export function Slider({
       vectorHelper.copy(e.point);
       e.object.worldToLocal(vectorHelper);
       const box: Box3 = e.object.geometry.boundingBox;
-      const value =
-        clamp((vectorHelper.x - box.min.x) / box.max.x - box.min.x, 0, 1) *
-        range;
+      const value = clamp((vectorHelper.x - box.min.x) / box.max.x - box.min.x, 0, 1) * range;
       startTransition(() => onChange(value));
       e.stopPropagation();
     },
@@ -88,9 +86,7 @@ export function Slider({
     e.stopPropagation();
   }, []);
 
-  const width = `${
-    ((1 - 0.03) * clamp(currentValue / range, 0, 1) + 0.03) * 100
-  }%` as const;
+  const width = `${((1 - 0.03) * clamp(currentValue / range, 0, 1) + 0.03) * 100}%` as const;
 
   const height = getHeight(size);
   const knobHeight = getKnobHeight(size);
@@ -141,12 +137,7 @@ export function Slider({
           backgroundOpacity={disabled ? 0.25 : 0.6}
         >
           {showIcon && (
-            <Container
-              width={height}
-              height={height}
-              alignItems="center"
-              justifyContent="center"
-            >
+            <Container width={height} height={height} alignItems="center" justifyContent="center">
               <DefaultStyleProvider
                 color="white"
                 width={iconHeight}

@@ -1,8 +1,4 @@
-import {
-  Container,
-  DefaultStyleProvider,
-  TextProperties,
-} from "@coconut-xr/koestlich";
+import { Container, DefaultStyleProvider, TextProperties } from "@coconut-xr/koestlich";
 import {
   ComponentPropsWithoutRef,
   ReactNode,
@@ -108,20 +104,14 @@ export function ListItem({
       }}
     >
       <DefaultStyleProvider color="white">
-        {leadingAccessory && (
-          <Container index={0}>{leadingAccessory}</Container>
-        )}
+        {leadingAccessory && <Container index={0}>{leadingAccessory}</Container>}
         <Container index={1} flexDirection="column" flexGrow={1}>
-          <DefaultStyleProvider<TextProperties> fontSize={18}>
-            {children}
-          </DefaultStyleProvider>
+          <DefaultStyleProvider<TextProperties> fontSize={18}>{children}</DefaultStyleProvider>
           <DefaultStyleProvider<TextProperties> fontSize={14} opacity={0.5}>
             {subtitle}
           </DefaultStyleProvider>
         </Container>
-        {trailingAccessory && (
-          <Container index={2}>{trailingAccessory}</Container>
-        )}
+        {trailingAccessory && <Container index={2}>{trailingAccessory}</Container>}
       </DefaultStyleProvider>
     </Container>
   );

@@ -10,7 +10,7 @@ import {
   useRef,
   useState,
 } from "react";
-import { Glass } from ".";
+import { Glass } from "./index.js";
 
 type TabBarContext = {
   value: unknown;
@@ -33,9 +33,7 @@ export function TabBar<T>({
   onValueChange,
   ...props
 }: TabBarProps<T>) {
-  const [internalValue, setInternalValue] = useState<T | undefined>(
-    defaultValue,
-  );
+  const [internalValue, setInternalValue] = useState<T | undefined>(defaultValue);
   const value = valueProp !== undefined ? valueProp : internalValue;
 
   const setValue = useCallback((value: T) => {
@@ -98,12 +96,7 @@ type TabBarItemProps<T> = ComponentPropsWithoutRef<typeof Container> & {
   icon: ReactNode;
 };
 
-export function TabBarItem<T>({
-  value: tabValue,
-  children,
-  icon,
-  ...props
-}: TabBarItemProps<T>) {
+export function TabBarItem<T>({ value: tabValue, children, icon, ...props }: TabBarItemProps<T>) {
   const { isExpanded, value, setValue } = useContext(TabBarContext)!;
 
   const isSelected = value === tabValue;

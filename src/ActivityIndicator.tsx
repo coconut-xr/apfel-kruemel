@@ -3,35 +3,22 @@ import { useFrame } from "@react-three/fiber";
 import { ComponentPropsWithoutRef, useMemo } from "react";
 import { Group, Mesh, MeshBasicMaterial, Shape, ShapeGeometry } from "three";
 
-type AnimationState = [
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-];
-
 type Size = "sm" | "md" | "lg";
 
 type ActivityIndicatorProps = ComponentPropsWithoutRef<typeof Container> & {
   size?: Size;
 };
 
-export function ActivityIndicator({
-  size = "md",
-  ...props
-}: ActivityIndicatorProps) {
+export function ActivityIndicator({ size = "md", ...props }: ActivityIndicatorProps) {
   const diameter = getDiameter(size);
   const pills = useMemo(() => createPills(size), [size]);
 
-  useFrame(({ clock }, delta) => {
-    pills.children.forEach((pill: Mesh, index) => {
-      const material = Array.isArray(pill.material)
-        ? pill.material[0]
-        : pill.material;
+  useFrame(({ clock }) => {
+    pills.children.forEach((pill, index) => {
+      if (!(pill instanceof Mesh)) {
+        return;
+      }
+      const material = Array.isArray(pill.material) ? pill.material[0] : pill.material;
       const interval = 0.8;
       const pillOffset = (index / pills.children.length) * interval;
       material.opacity = 1 - mod(clock.elapsedTime - pillOffset, interval);
@@ -39,12 +26,7 @@ export function ActivityIndicator({
   });
 
   return (
-    <Container
-      width={diameter}
-      height={diameter}
-      borderRadius={diameter / 2}
-      {...props}
-    >
+    <Container width={diameter} height={diameter} borderRadius={diameter / 2} {...props}>
       <Object object={pills} height="100%" width="100%" />
     </Container>
   );

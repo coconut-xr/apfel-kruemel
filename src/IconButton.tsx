@@ -30,9 +30,7 @@ export function IconButton({
       alignItems="center"
       justifyContent="center"
       backgroundColor="white"
-      backgroundOpacity={
-        disabled ? 0.1 : selected ? 1 : hoverCount > 0 ? 0.3 : platter ? 0.2 : 0
-      }
+      backgroundOpacity={disabled ? 0.1 : selected ? 1 : hoverCount > 0 ? 0.3 : platter ? 0.2 : 0}
       {...props}
       onPointerEnter={(e) => {
         setHoverCount((current) => current + 1);

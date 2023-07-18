@@ -33,9 +33,7 @@ type SegmentedControlContext<T> = {
   disabled?: boolean;
 };
 
-const SegmentedControlContext = createContext<SegmentedControlContext<unknown>>(
-  {},
-);
+const SegmentedControlContext = createContext<SegmentedControlContext<unknown>>({});
 
 export function SegmentedControl<T>({
   value,
@@ -44,9 +42,7 @@ export function SegmentedControl<T>({
   disabled,
   ...props
 }: SegmentedControlProps<T>) {
-  const [internalValue, setInternalValue] = useState<T | undefined>(
-    defaultValue,
-  );
+  const [internalValue, setInternalValue] = useState<T | undefined>(defaultValue);
   const currentValue = value != null ? value : internalValue;
 
   const onChange = useCallback((value: T) => {
@@ -80,9 +76,7 @@ export function SegmentedControl<T>({
   );
 }
 
-type SegmentedControlButtonProps<T> = ComponentPropsWithoutRef<
-  typeof Container
-> & {
+type SegmentedControlButtonProps<T> = ComponentPropsWithoutRef<typeof Container> & {
   value: T;
   disabled?: boolean;
 };
@@ -133,12 +127,7 @@ export function SegmentedControlButton<T>({
         color="white"
         opacity={disabled || tabsDisabled ? 0.4 : 1}
       >
-        <Container
-          height="100%"
-          flexDirection="row"
-          alignItems="center"
-          gapColumn={10}
-        >
+        <Container height="100%" flexDirection="row" alignItems="center" gapColumn={10}>
           {children}
         </Container>
       </DefaultStyleProvider>
