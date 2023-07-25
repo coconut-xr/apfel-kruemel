@@ -5,6 +5,7 @@ import {
   createContext,
   useContext,
   useMemo,
+  useRef,
   useState,
 } from "react";
 
@@ -55,8 +56,10 @@ export function ListItem({
   isLast,
   ...props
 }: ListItemProps) {
-  const [hoverCount, setHoverCount] = useState(0);
-  const [activeCount, setActiveCount] = useState(0);
+  const hoverCountRef = useRef(0);
+  const [isHovered, setIsHovered] = useState(hoverCountRef.current > 0);
+  const activeSet = useMemo(() => new Set<number>(), []);
+  const [isActive, setIsActive] = useState(activeSet.size > 0);
 
   const { type } = useContext(ListContext);
 
@@ -74,32 +77,36 @@ export function ListItem({
       positionType="relative"
       backgroundOpacity={
         type === "plain"
-          ? activeCount > 0
+          ? isActive
             ? 0.3
             : selected
             ? 0.2
-            : hoverCount > 0
+            : isHovered
             ? 0.1
             : 0
-          : hoverCount > 0
+          : isHovered
           ? 0.1
           : 0.2
       }
       {...props}
       onPointerEnter={(e) => {
-        setHoverCount((current) => current + 1);
+        hoverCountRef.current++;
+        setIsHovered(hoverCountRef.current > 0);
         props.onPointerEnter?.(e);
       }}
       onPointerLeave={(e) => {
-        setHoverCount((current) => current - 1);
+        hoverCountRef.current--;
+        setIsHovered(hoverCountRef.current > 0);
         props.onPointerLeave?.(e);
       }}
       onPointerDown={(e) => {
-        setActiveCount((current) => current + 1);
+        activeSet.add(e.pointerId);
+        setIsActive(activeSet.size > 0);
         props.onPointerDown?.(e);
       }}
       onPointerUp={(e) => {
-        setActiveCount((current) => current - 1);
+        activeSet.delete(e.pointerId);
+        setIsActive(activeSet.size > 0);
         props.onPointerUp?.(e);
       }}
     >
