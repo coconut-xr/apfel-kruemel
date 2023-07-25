@@ -48,7 +48,7 @@ function App() {
         </div>
         <div className="content">
           <Canvas events={noEvents} {...inputCanvasProps}>
-            <Environment files="apartment_4k.hdr" background />
+            <Suspense><Environment files="apartment_4k.hdr" background blur={0.05} /></Suspense>
             <directionalLight position={[-2, 2, 2]} intensity={0.8} />
             <OrbitControls enableRotate={false} />
             <XWebPointers />
