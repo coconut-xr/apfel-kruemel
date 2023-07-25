@@ -1,3 +1,4 @@
+import { Input } from "@coconut-xr/input";
 import { Container, DefaultStyleProvider, Text } from "@coconut-xr/koestlich";
 import { makeBorderMaterial } from "@coconut-xr/xmaterials";
 import { ComponentPropsWithoutRef, ReactNode, useState } from "react";
@@ -9,6 +10,8 @@ type TextInputProps = ComponentPropsWithoutRef<typeof Container> & {
   style?: Style;
   disabled?: boolean;
   placeholder?: string;
+  value: string;
+  onValueChange: (value: string) => void;
   prefix?: ReactNode;
 };
 
@@ -22,6 +25,8 @@ export function TextInput({
   disabled,
   placeholder,
   prefix,
+  value,
+  onValueChange,
   ...props
 }: TextInputProps) {
   const [hoverCount, setHoverCount] = useState(0);
@@ -62,9 +67,31 @@ export function TextInput({
             </DefaultStyleProvider>
           </Container>
         )}
-        <Text fontSize={14} index={1}>
-          {placeholder}
-        </Text>
+        <Container
+          justifyContent="center"
+          minHeight={1}
+          index={1}
+          flexGrow={1}
+          positionType="relative"
+        >
+          <Text
+            fontSize={14}
+            index={0}
+            positionType="absolute"
+            opacity={(value?.length ?? 0) > 0 ? 0 : undefined}
+          >
+            {placeholder}
+          </Text>
+          <Input
+            height="100%"
+            width="100%"
+            verticalAlign="center"
+            onChange={onValueChange}
+            fontSize={14}
+            index={1}
+            value={value}
+          />
+        </Container>
       </DefaultStyleProvider>
     </Container>
   );
