@@ -1,4 +1,5 @@
-import { Container, Object } from "@coconut-xr/koestlich";
+//RenderObject necassary because of bug in codesandbox (Codesandbox imports "Object" for Object.defineProperty)
+import { Container, Object as RenderObject } from "@coconut-xr/koestlich";
 import { useFrame } from "@react-three/fiber";
 import { ComponentPropsWithoutRef, useMemo } from "react";
 import { Group, Mesh, MeshBasicMaterial, Shape, ShapeGeometry } from "three";
@@ -27,7 +28,7 @@ export function ActivityIndicator({ size = "md", ...props }: ActivityIndicatorPr
 
   return (
     <Container width={diameter} height={diameter} borderRadius={diameter / 2} {...props}>
-      <Object object={pills} height="100%" width="100%" />
+      <RenderObject object={pills} height="100%" width="100%" />
     </Container>
   );
 }
