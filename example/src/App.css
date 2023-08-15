@@ -11,6 +11,7 @@
 .tabs {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .tabs a {
@@ -25,4 +26,18 @@
 
 .tabs a.active {
   color: black;
+}
+
+.enter-btn {
+  margin-right: 1rem;
+  aspect-ratio: 1;
+  height: 2.5rem;
+  background: none;
+  border-radius: 100%;
+  border: none;
+}
+
+.enter-btn:hover {
+  background: rgba(0,0,0,0.1);
+  cursor: pointer;
 }

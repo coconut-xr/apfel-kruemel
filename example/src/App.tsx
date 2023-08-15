@@ -1,8 +1,15 @@
 import { Fonts } from "@coconut-xr/apfel-kruemel";
+import { inputCanvasProps } from "@coconut-xr/input";
 import { RootContainer } from "@coconut-xr/koestlich";
-import { XWebPointers, noEvents } from "@coconut-xr/xinteraction/react";
-import { Environment, OrbitControls } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
+import { Controllers, Hands, XRCanvas } from "@coconut-xr/natuerlich/defaults";
+import {
+  ImmersiveSessionOrigin,
+  NonImmersiveCamera,
+  SessionModeGuard,
+  SessionSupportedGuard,
+  useEnterXR,
+} from "@coconut-xr/natuerlich/react";
+import { Environment } from "@react-three/drei";
 import { Suspense } from "react";
 import { HashRouter, NavLink, Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
@@ -14,9 +21,14 @@ import ProgressIndicatorsPage from "./pages/ProgressIndicators.js";
 import SegmentedControlsPage from "./pages/SegmentedControls.js";
 import SlidersPage from "./pages/Sliders.js";
 import TabBarsPage from "./pages/TabBars.js";
-import { inputCanvasProps } from "@coconut-xr/input";
+
+const sessionOptions: XRSessionInit = {
+  requiredFeatures: ["local-floor", "hand-tracking"],
+};
 
 function App() {
+  const enterAR = useEnterXR("immersive-ar", sessionOptions);
+  const enterVR = useEnterXR("immersive-vr", sessionOptions);
   return (
     <HashRouter>
       <div className="container">
@@ -45,15 +57,35 @@ function App() {
           <NavLink to="/tab-bars" className="tab">
             TabBars
           </NavLink>
+          <div style={{ flexGrow: 1 }}></div>
+          <SessionSupportedGuard mode="immersive-ar">
+            <button className="enter-btn" onClick={enterAR}>AR</button>
+          </SessionSupportedGuard>
+          <SessionSupportedGuard mode="immersive-vr">
+            <button className="enter-btn" onClick={enterVR}>VR</button>
+          </SessionSupportedGuard>
         </div>
         <div className="content">
-          <Canvas events={noEvents} {...inputCanvasProps}>
-            <Suspense><Environment files="apartment_4k.hdr" background blur={0.05} /></Suspense>
-            <directionalLight position={[-2, 2, 2]} intensity={0.8} />
-            <OrbitControls enableRotate={false} />
-            <XWebPointers />
+          <XRCanvas {...inputCanvasProps}>
+            <SessionModeGuard deny="immersive-ar">
+              <Suspense>
+                <Environment files="apartment_4k.hdr" background blur={0.05} />
+              </Suspense>
+            </SessionModeGuard>
+            <directionalLight position={[-2, 2, 2]} intensity={1.6} />
+            <NonImmersiveCamera position={[0, 1.5, 0]} />
+            <ImmersiveSessionOrigin>
+              <Hands type="touch" />
+              <Controllers />
+            </ImmersiveSessionOrigin>
             <Fonts>
-              <RootContainer pixelSize={0.01} anchorX="center" anchorY="center" precision={0.01}>
+              <RootContainer
+                position={[0, 1.5, -0.8]}
+                pixelSize={0.001}
+                anchorX="center"
+                anchorY="center"
+                precision={0.01}
+              >
                 <Suspense>
                   <Routes>
                     <Route path="/" element={<Navigate to="/buttons" />} />
@@ -69,7 +101,7 @@ function App() {
                 </Suspense>
               </RootContainer>
             </Fonts>
-          </Canvas>
+          </XRCanvas>
         </div>
       </div>
     </HashRouter>
