@@ -24,7 +24,7 @@ jobs:
 
             - name: Copy README.md to docs
               run: |
-                sed -i 's+./docs/+./+g' README.md
+                sed -i 's+\./docs/+./+g' README.md
                 cp README.md docs/README.md
 
             - name: Setup Out Folder
