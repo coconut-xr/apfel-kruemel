@@ -43,7 +43,9 @@ Explore all components in the [examples](https://coconut-xr.github.io/apfel-krue
 
 ## Tutorials
 
-- [Immersive Music Player<br><img src="./images/mini-player.gif"  width="300">](https://github.com/coconut-xr/getting-started)
+- [Immersive Music Player](https://github.com/coconut-xr/getting-started)
+
+    <img src="./images/mini-player.gif"  width="300">
 
 ---
 
