@@ -2,7 +2,7 @@
 
 A component enabling the user to switch between a checked and unchecked state.
 
-## [Interactive Example](https://coconut-xr.github.io/apfel-kruemel/#/checkboxes)  
+[Interactive Example](https://coconut-xr.github.io/apfel-kruemel/examples/#/checkboxes)   | [CodeSandbox](https://codesandbox.io/s/apfel-kruemel-examples-ld9xk5?file=/src/pages/Checkboxes.tsx)
 
 ![CheckBox](images/checkbox.png)
 

@@ -2,7 +2,7 @@
 
 A component enabling the user to adjust a value within a specific range by dragging a handle along a track.
 
-## [Interactive Example](https://coconut-xr.github.io/apfel-kruemel/#/sliders)  
+[Interactive Example](https://coconut-xr.github.io/apfel-kruemel/examples/#/sliders) | [CodeSandbox](https://codesandbox.io/s/apfel-kruemel-examples-ld9xk5?file=/src/pages/Sliders.tsx)
 
 ![Sliders](images/sliders.png)
 

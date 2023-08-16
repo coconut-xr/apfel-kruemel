@@ -2,7 +2,7 @@
 
 Displays a button.
 
-## [Interactive Example](https://coconut-xr.github.io/apfel-kruemel/#/buttons)  
+[Interactive Example](https://coconut-xr.github.io/apfel-kruemel/examples/#/buttons) | [CodeSandbox](https://codesandbox.io/s/apfel-kruemel-examples-ld9xk5?file=/src/pages/Buttons.tsx)
 
 ## Icon Button
 

@@ -2,7 +2,7 @@
 
 Displays an input field.
 
-## [Interactive Example](https://coconut-xr.github.io/apfel-kruemel/#/input-fields)  
+[Interactive Example](https://coconut-xr.github.io/apfel-kruemel/examples/#/input-fields)   | [CodeSandbox](https://codesandbox.io/s/apfel-kruemel-examples-ld9xk5?file=/src/pages/InputFields.tsx)
 
 ![InputField](images/inputFields.png)
 

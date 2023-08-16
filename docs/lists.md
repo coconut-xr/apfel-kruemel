@@ -2,7 +2,7 @@
 
 A component enabling a visual arrangement of items presented in a structured format.
 
-## [Interactive Example](https://coconut-xr.github.io/apfel-kruemel/#/lists)  
+[Interactive Example](https://coconut-xr.github.io/apfel-kruemel/examples/#/lists)   | [CodeSandbox](https://codesandbox.io/s/apfel-kruemel-examples-ld9xk5?file=/src/pages/Lists.tsx)
 
 ![Lists](images/lists.png)
 

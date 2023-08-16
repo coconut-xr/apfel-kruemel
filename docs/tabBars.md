@@ -2,7 +2,7 @@
 
 A component providing a navigation mechanism to allow users to switch between different sections or views of an application.
 
-## [Interactive Example](https://coconut-xr.github.io/apfel-kruemel/#/tab-bars)  
+[Interactive Example](https://coconut-xr.github.io/apfel-kruemel/examples/#/tab-bars) | [CodeSandbox](https://codesandbox.io/s/apfel-kruemel-examples-ld9xk5?file=/src/pages/TabBars.tsx)
 
 ![TabBar](images/tabBar.gif)
 
