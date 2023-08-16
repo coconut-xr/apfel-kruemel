@@ -4,7 +4,7 @@ A component enabling the user to adjust a value within a specific range by dragg
 
 [Interactive Example](https://coconut-xr.github.io/apfel-kruemel/examples/#/sliders) | [CodeSandbox](https://codesandbox.io/s/apfel-kruemel-examples-ld9xk5?file=/src/pages/Sliders.tsx)
 
-![Sliders](images/sliders.png)
+<img src="./images/sliders.png" width="67.8%" alt="Sliders"> <img src="./images/xr3.gif" width="25%" alt="Sliders Gif">
 
 <br>
 
