@@ -29,7 +29,8 @@ jobs:
 
             - name: Setup Out Folder
               run: |
-                  mkdir out
+                  mkdir -p out/docs
+                  mkdir -p out/examples
                   cp -r docs/* out/docs
                   cp -r examples/dist/* out/examples
 
