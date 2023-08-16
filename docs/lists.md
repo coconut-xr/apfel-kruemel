@@ -4,7 +4,7 @@ A component enabling a visual arrangement of items presented in a structured for
 
 [Interactive Example](https://coconut-xr.github.io/apfel-kruemel/examples/#/lists)   | [CodeSandbox](https://codesandbox.io/s/apfel-kruemel-examples-ld9xk5?file=/src/pages/Lists.tsx)
 
-![Lists](images/lists.png)
+<img src="./images/lists.png" width="54.3%" alt="Lists"> <img src="./images/xr1.gif" width="33%" alt="Lists Gif">
 
 <br>
 
