@@ -7,7 +7,11 @@
 
 ![header image](./images/header.jpg)
 
-*Pre-Designed Component Library for Spatial User Interfaces*
+*Pre-Designed Component Library for Spatial User Interfaces rendered in Three.js*
+
+<img src="./images/xr1.gif" width="32%">
+<img src="./images/xr2.gif" width="32%">
+<img src="./images/xr3.gif" width="32%">
 
 This library provides a collection of pre-designed components for spatial user interfaces built on top of [@coconut-xr/koestlich](https://github.com/coconut-xr/koestlich) (immersive ui library) and [@coconut-xr/natuerlich](https://github.com/coconut-xr/natuerlich) (immersive interaction library).
 
