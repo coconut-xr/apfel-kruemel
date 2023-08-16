@@ -33,9 +33,11 @@ Explore all components in the [examples](https://coconut-xr.github.io/apfel-krue
 
 * [Slider<br><img src="./images/sliders.png"  width="300">](https://coconut-xr.github.io/apfel-kruemel/docs/#/slider)
 
-* <a href="https://coconut-xr.github.io/apfel-kruemel/docs/#/progressIndicators">ProgressIndicators<br><img src="./images/progress.gif"  width="300"></a>
+* [ProgressIndicators](https://coconut-xr.github.io/apfel-kruemel/docs/#/progressIndicators)<br>
+<img src="./images/progress.gif"  width="300"></a>
 
-* <a href="https://coconut-xr.github.io/apfel-kruemel/docs/#/tabBars">TabBars<br><img src="./images/tabBar.gif"  width="300"></a>
+* [TabBars](https://coconut-xr.github.io/apfel-kruemel/docs/#/tabBars)<br>
+<img src="./images/tabBar.gif"  width="300">
 
 ## Tutorials
 
