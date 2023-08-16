@@ -33,13 +33,19 @@ Explore all components in the [examples](https://coconut-xr.github.io/apfel-krue
 
 * [Slider<br><img src="./docs/images/sliders.png"  width="300">](https://coconut-xr.github.io/apfel-kruemel/docs/#/slider)
 
-* [ProgressIndicators<br><img src="./docs/images/progress.gif"  width="300">](https://coconut-xr.github.io/apfel-kruemel/docs/#/progressIndicators)
+* [ProgressIndicators](https://coconut-xr.github.io/apfel-kruemel/docs/#/progressIndicators)
 
-* [TabBars<br><img src="./docs/images/tabBar.gif"  width="300">](https://coconut-xr.github.io/apfel-kruemel/docs/#/tabBars)
+    <img src="./docs/images/progress.gif"  width="300">
+
+* [TabBars](https://coconut-xr.github.io/apfel-kruemel/docs/#/tabBars)
+
+    <img src="./docs/images/tabBar.gif"  width="300">
 
 ## Tutorials
 
-- [Immersive Music Player<br><img src="./docs/images/mini-player.gif"  width="300">](https://github.com/coconut-xr/getting-started)
+- [Immersive Music Player](https://github.com/coconut-xr/getting-started)
+
+    <img src="./docs/images/mini-player.gif"  width="300">
 
 ---
 
