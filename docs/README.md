@@ -13,40 +13,40 @@ This library provides a collection of pre-designed components for spatial user i
 
 ### Getting started with apfel-kruemel
 
-Explore all components in the [examples](https://coconut-xr.github.io/apfel-kruemel/examples/), learn more about all components in the [documentation](https://coconut-xr.github.io/apfel-krueme./), use and test all components in a [CodeSandbox](https://codesandbox.io/s/apfel-kruemel-examples-ld9xk5?file=/src/pages/Buttons.tsx), or go through a [tutorial](https://github.com/coconut-xr/getting-started) for apfel-kruemel and the whole coconut-xr ecosystem.
+Explore all components in the [examples](https://coconut-xr.github.io/apfel-kruemel/examples/), learn more about all components in the [documentation](https://coconut-xr.github.io/apfel-kruemel/docs/), use and test all components in a [CodeSandbox](https://codesandbox.io/s/apfel-kruemel-examples-ld9xk5?file=/src/pages/Buttons.tsx), or go through a [tutorial](https://github.com/coconut-xr/getting-started) for apfel-kruemel and the whole coconut-xr ecosystem.
 
 
-## [Documentation](https://coconut-xr.github.io/apfel-krueme./)
+## [Documentation](https://coconut-xr.github.io/apfel-kruemel/docs/)
 
-* [Buttons](https://coconut-xr.github.io/apfel-krueme./#/buttons)
+* [Buttons](https://coconut-xr.github.io/apfel-kruemel/docs/#/buttons)
 
     <img src="./images/labelButton.png"  width="200">
 
-* [Checkboxes](https://coconut-xr.github.io/apfel-krueme./#/checkboxes)
+* [Checkboxes](https://coconut-xr.github.io/apfel-kruemel/docs/#/checkboxes)
 
     <img src="./images/checkbox.png"  width="200">
 
-* [InputFields](https://coconut-xr.github.io/apfel-krueme./#/inputFields)
+* [InputFields](https://coconut-xr.github.io/apfel-kruemel/docs/#/inputFields)
 
     <img src="./images/inputFields.png"  width="200">
 
-* [Lists](https://coconut-xr.github.io/apfel-krueme./#/lists)
+* [Lists](https://coconut-xr.github.io/apfel-kruemel/docs/#/lists)
 
     <img src="./images/lists.png"  width="200">
 
-* [SegmentedControls](https://coconut-xr.github.io/apfel-krueme./#/segmentedControls)
+* [SegmentedControls](https://coconut-xr.github.io/apfel-kruemel/docs/#/segmentedControls)
 
     <img src="./images/segmentedControls.png"  width="200">
 
-* [Slider](https://coconut-xr.github.io/apfel-krueme./#/slider)
+* [Slider](https://coconut-xr.github.io/apfel-kruemel/docs/#/slider)
 
     <img src="./images/sliders.png"  width="200">
 
-* [ProgressIndicators](https://coconut-xr.github.io/apfel-krueme./#/progressIndicators)
+* [ProgressIndicators](https://coconut-xr.github.io/apfel-kruemel/docs/#/progressIndicators)
 
     <img src="./images/progress.gif"  width="200">
 
-* [TabBars](https://coconut-xr.github.io/apfel-krueme./#/tabBars)
+* [TabBars](https://coconut-xr.github.io/apfel-kruemel/docs/#/tabBars)
 
     <img src="./images/tabBar.gif"  width="200">
 
