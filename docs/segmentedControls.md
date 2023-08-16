@@ -4,7 +4,7 @@ A component enabling the user to make a choice among a set of mutually exclusive
 
 [Interactive Example](https://coconut-xr.github.io/apfel-kruemel/examples/#/segmented-controls) | [CodeSandbox](https://codesandbox.io/s/apfel-kruemel-examples-ld9xk5?file=/src/pages/SegmentedControls.tsx)
 
-![Segemented Controls](images/segmentedControls.png)
+<img src="./images/segmentedControls.png" width="69.4%" alt="Segmented Controls"> <img src="./images/xr2.gif" width="25%" alt="Segmented controls Gif">
 
 <br>
 
