@@ -1,6 +1,6 @@
 {
   "name": "@coconut-xr/apfel-kruemel",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "homepage": "https://github.com/coconut-xr/apfel-kruemel",
   "keywords": [
     "r3f",
@@ -35,8 +35,8 @@
     "fix:eslint": "eslint src --fix"
   },
   "devDependencies": {
-    "@coconut-xr/koestlich": "^0.3.7",
-    "@coconut-xr/lucide-koestlich": "^0.0.2",
+    "@coconut-xr/koestlich": "^0.3.8",
+    "@coconut-xr/lucide-koestlich": "^0.0.3",
     "@coconut-xr/natuerlich": "^0.0.25",
     "@coconut-xr/xmaterials": "^0.0.3",
     "@react-three/drei": "^9.80.3",
