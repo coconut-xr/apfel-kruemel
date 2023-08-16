@@ -7,7 +7,9 @@
 
 ![header image](./docs/images/header.jpg)
 
-*Pre-Designed Component Library for Spatial User Interfaces*
+*Pre-Designed Component Library for Spatial User Interfaces rendered in Three.js*
+
+<img src="./docs/images/xr1.gif" width="33%"><img src="./docs/images/xr2.gif" width="33%"><img src="./docs/images/xr3.gif" width="33%">
 
 This library provides a collection of pre-designed components for spatial user interfaces built on top of [@coconut-xr/koestlich](https://github.com/coconut-xr/koestlich) (immersive ui library) and [@coconut-xr/natuerlich](https://github.com/coconut-xr/natuerlich) (immersive interaction library).
 
@@ -31,13 +33,19 @@ Explore all components in the [examples](https://coconut-xr.github.io/apfel-krue
 
 * [Slider<br><img src="./docs/images/sliders.png"  width="300">](https://coconut-xr.github.io/apfel-kruemel/docs/#/slider)
 
-* [ProgressIndicators<br><img src="./docs/images/progress.gif"  width="300">](https://coconut-xr.github.io/apfel-kruemel/docs/#/progressIndicators)
+* [ProgressIndicators](https://coconut-xr.github.io/apfel-kruemel/docs/#/progressIndicators)
 
-* [TabBars<br><img src="./docs/images/tabBar.gif"  width="300">](https://coconut-xr.github.io/apfel-kruemel/docs/#/tabBars)
+    <img src="./docs/images/progress.gif"  width="300">
+
+* [TabBars](https://coconut-xr.github.io/apfel-kruemel/docs/#/tabBars)
+
+    <img src="./docs/images/tabBar.gif"  width="300">
 
 ## Tutorials
 
-- [Immersive Music Player<br><img src="./docs/images/mini-player.gif"  width="300">](https://github.com/coconut-xr/getting-started)
+- [Immersive Music Player](https://github.com/coconut-xr/getting-started)
+
+    <img src="./docs/images/mini-player.gif"  width="300">
 
 ---
 
