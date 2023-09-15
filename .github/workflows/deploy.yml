@@ -23,7 +23,7 @@ jobs:
                   npm run build
                   
             - name: Install and Build docusaurus docs
-              working_directory: docs
+              working-directory: docs
               run: |
                   npm ci
                   npm run build
