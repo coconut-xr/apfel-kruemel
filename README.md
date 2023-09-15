@@ -5,7 +5,7 @@
 [![Twitter](https://img.shields.io/twitter/follow/coconut_xr?style=flat-square)](https://twitter.com/coconut_xr)
 [![Discord](https://img.shields.io/discord/1087727032240185424?style=flat-square&label=discord)](https://discord.gg/RbyaXJJaJM)
 
-![header image](./docs/static/images/header.jpg)
+<img src="./docs/static/images/header.jpg" width="100%">
 
 *Pre-Designed Component Library for Spatial User Interfaces rendered in Three.js*
 
@@ -17,34 +17,27 @@ This library provides a collection of pre-designed components for spatial user i
 
 Explore all components in the [examples](https://coconut-xr.github.io/apfel-kruemel/examples/), learn more about all components in the [documentation](https://coconut-xr.github.io/apfel-kruemel/docs/), use and test all components in a [CodeSandbox](https://codesandbox.io/s/apfel-kruemel-examples-ld9xk5?file=/src/pages/Buttons.tsx), or go through a [tutorial](https://github.com/coconut-xr/getting-started) for apfel-kruemel and the whole coconut-xr ecosystem.
 
-
 ## [Documentation](https://coconut-xr.github.io/apfel-kruemel/docs/)
 
-* [Buttons<br><img src="./docs/static/images/labelButton.png"  width="300">](https://coconut-xr.github.io/apfel-kruemel/docs/#/buttons)
+* <a href="/buttons">Buttons<br></br><img src="./docs/static/images/labelButton.png" width="300"></a>
 
-* [Checkboxes<br><img src="./docs/static/images/checkbox.png"  width="300">](https://coconut-xr.github.io/apfel-kruemel/docs/#/checkboxes)
+* <a href="/checkboxes">Checkboxes<br></br><img src="./docs/static/images/checkbox.png" width="300"></a>
 
-* [InputFields<br><img src="./docs/static/images/inputFields.png"  width="300">](https://coconut-xr.github.io/apfel-kruemel/docs/#/inputFields)
+* <a href="/inputFields">InputFields<br></br><img src="./docs/static/images/inputFields.png" width="300"></a>
 
-* [Lists<br><img src="./docs/static/images/lists.png"  width="300">](https://coconut-xr.github.io/apfel-kruemel/docs/#/lists)
+* <a href="/lists">Lists<br></br><img src="./docs/static/images/lists.png" width="300"></a>
 
-* [SegmentedControls<br><img src="./docs/static/images/segmentedControls.png"  width="300">](https://coconut-xr.github.io/apfel-kruemel/docs/#/segmentedControls)
+* <a href="/segmentedControls">SegmentedControls<br></br><img src="./docs/static/images/segmentedControls.png" width="300"></a>
 
-* [Slider<br><img src="./docs/static/images/sliders.png"  width="300">](https://coconut-xr.github.io/apfel-kruemel/docs/#/slider)
+* <a href="/slider">Slider<br></br><img src="./docs/static/images/sliders.png" width="300"></a>
 
-* [ProgressIndicators](https://coconut-xr.github.io/apfel-kruemel/docs/#/progressIndicators)
+* <a href="/progressIndicators">Progess Indicators<br></br><img src="./docs/static/images/progress.gif" width="300"></a>
 
-    <img src="./docs/static/images/progress.gif"  width="300">
-
-* [TabBars](https://coconut-xr.github.io/apfel-kruemel/docs/#/tabBars)
-
-    <img src="./docs/static/images/tabBar.gif"  width="300">
+* <a href="/tabBars">Tab Bars<br></br><img src="./docs/static/images/tabBar.gif" width="300"></a>
 
 ## Tutorials
 
-- [Immersive Music Player](https://github.com/coconut-xr/getting-started)
-
-    <img src="./docs/static/images/mini-player.gif"  width="300">
+* <a href="https://github.com/coconut-xr/getting-started">Immersive Music Player<br></br><img src="./docs/static/images/mini-player.gif" width="300"></a>
 
 ---
 

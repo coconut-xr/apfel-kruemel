@@ -12,13 +12,11 @@ import Image from '@theme/IdealImage';
 [![Twitter](https://img.shields.io/twitter/follow/coconut_xr?style=flat-square)](https://twitter.com/coconut_xr)
 [![Discord](https://img.shields.io/discord/1087727032240185424?style=flat-square&label=discord)](https://discord.gg/RbyaXJJaJM)
 
-![header image](@site/static/images/header.jpg)
+<Image img={require('@site/static/images/header.jpg')} style={{width: "100%"}}/>
 
 *Pre-Designed Component Library for Spatial User Interfaces rendered in Three.js*
 
-<Image img={require('@site/static/images/xr1.gif')} style={{width: "33%"}}/>
-<Image img={require('@site/static/images/xr2.gif')} style={{width: "33%"}}/>
-<Image img={require('@site/static/images/xr3.gif')} style={{width: "33%"}}/>
+<Image img={require('@site/static/images/xr1.gif')} style={{width: "33%"}}/><Image img={require('@site/static/images/xr2.gif')} style={{width: "33%"}}/><Image img={require('@site/static/images/xr3.gif')} style={{width: "33%"}}/>
 
 This library provides a collection of pre-designed components for spatial user interfaces built on top of [@coconut-xr/koestlich](https://github.com/coconut-xr/koestlich) (immersive ui library) and [@coconut-xr/natuerlich](https://github.com/coconut-xr/natuerlich) (immersive interaction library).
 
