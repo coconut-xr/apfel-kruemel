@@ -1,14 +1,16 @@
+import Image from '@theme/IdealImage';
+import { CodesandboxEmbed } from './codesandboxEmbed.tsx'
+
 # Buttons
 
 Displays a button.
 
-[Interactive Example](https://coconut-xr.github.io/apfel-kruemel/examples/#/buttons) | [CodeSandbox](https://codesandbox.io/s/apfel-kruemel-examples-ld9xk5?file=/src/pages/Buttons.tsx)
+<!-- [Interactive Example](https://coconut-xr.github.io/apfel-kruemel/examples/#/buttons) | [CodeSandbox](https://codesandbox.io/s/apfel-kruemel-examples-ld9xk5?file=/src/pages/Buttons.tsx) -->
 
 ## Icon Button
 
-![Icon Buttons](images/iconButtons.png)
+<Image img={require('@site/static/images/iconButtons.png')} style={{width: "60%"}}/>
 
-<br>
 
 ### Code Example
 
@@ -28,7 +30,12 @@ export default function IconButton() {
 }
 ```
 
-#### Icon Button Params
+### Sandbox
+
+<CodesandboxEmbed defaultPath="buttons"/>
+
+
+#### _Icon Button Params_
 
 | Name   | Type    | Attributes               | Description        |
 |------- |-------- |------------------------- |------------------- |
@@ -37,11 +44,11 @@ export default function IconButton() {
 | selected  | boolean  | optional / default: false  | If true, changes the appearance of the icon button to a selected state |
 | disabled  | boolean  | optional / default: false  | If true, disable all interactions for the button |
 
-<br>
+<br></br>
 
 ## Text Button
 
-![Buttons](images/labelButton.png)
+<Image img={require('@site/static/images/labelButton.png')} style={{width: "60%"}}/>
 
 ### Code Example
 
@@ -61,8 +68,11 @@ export default function TextButton() {
 }
 ```
 
-#### Button Params
+### Sandbox
 
+<CodesandboxEmbed defaultPath="buttons"/>
+
+#### _Button Params_
 | Name   | Type    | Attributes               | Description        |
 |------- |-------- |------------------------- |------------------- |
 | size  | Size  | optional / default: "md"  | Sets the size of the button. Options are "sm" / "md" / "lg" |

@@ -1,12 +1,13 @@
+import Image from '@theme/IdealImage';
+import { CodesandboxEmbed } from './codesandboxEmbed.tsx'
+
 # Checkbox
 
 A component enabling the user to switch between a checked and unchecked state.
 
-[Interactive Example](https://coconut-xr.github.io/apfel-kruemel/examples/#/checkboxes)   | [CodeSandbox](https://codesandbox.io/s/apfel-kruemel-examples-ld9xk5?file=/src/pages/Checkboxes.tsx)
+<!-- [Interactive Example](https://coconut-xr.github.io/apfel-kruemel/examples/#/checkboxes)   | [CodeSandbox](https://codesandbox.io/s/apfel-kruemel-examples-ld9xk5?file=/src/pages/Checkboxes.tsx) -->
 
-![CheckBox](images/checkbox.png)
-
-<br>
+<Image img={require('@site/static/images/checkbox.png')} style={{width: "50%"}}/>
 
 ### Code Example
 
@@ -23,7 +24,11 @@ export default function Checkboxes() {
 }
 ```
 
-#### Params
+### Sandbox
+
+<CodesandboxEmbed defaultPath="checkboxes"/>
+
+#### _Params_
 
 | Name   | Type    | Attributes               | Description        |
 |------- |-------- |------------------------- |------------------- |

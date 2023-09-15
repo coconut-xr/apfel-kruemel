@@ -1,12 +1,14 @@
+import Image from '@theme/IdealImage';
+import { CodesandboxEmbed } from './codesandboxEmbed.tsx'
+
 # Tabs
 
 A component providing a navigation mechanism to allow users to switch between different sections or views of an application.
 
-[Interactive Example](https://coconut-xr.github.io/apfel-kruemel/examples/#/tab-bars) | [CodeSandbox](https://codesandbox.io/s/apfel-kruemel-examples-ld9xk5?file=/src/pages/TabBars.tsx)
+<!-- [Interactive Example](https://coconut-xr.github.io/apfel-kruemel/examples/#/tab-bars) | [CodeSandbox](https://codesandbox.io/s/apfel-kruemel-examples-ld9xk5?file=/src/pages/TabBars.tsx) -->
 
-![TabBar](images/tabBar.gif)
+<Image img={require('@site/static/images/tabBar.gif')}/>
 
-<br>
 
 ### Code Example
 
@@ -35,9 +37,13 @@ export default function TabBar() {
 }
 ```
 
-#### Params
+### Sandbox
 
-___Tab Bar___
+<CodesandboxEmbed defaultPath="tab-bars"/>
+
+#### _Params_
+
+##### _Tab Bar_
 
 | Name   | Type    | Attributes               | Description        |
 |------- |-------- |------------------------- |------------------- |
@@ -45,7 +51,7 @@ ___Tab Bar___
 | defaultValue  | T  | optional  | The default selected tab of the tab bar |
 | onValueChange  | (value: T) => void  | optional | Callback fired when the value is changed |
 
-___Tab Bar Item___
+##### _Tab Bar Item_
 
 | Name   | Type    | Attributes               | Description        |
 |------- |-------- |------------------------- |------------------- |

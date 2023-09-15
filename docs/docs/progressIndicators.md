@@ -1,20 +1,19 @@
+import Image from '@theme/IdealImage';
+import { CodesandboxEmbed } from './codesandboxEmbed.tsx'
+
 # Indicators
 
-
-### Progress Indicator
+## Progress Indicator
 
 A component used to visually communicate the progress of a task or process to the user.
 
-### Activity Indicator
+## Activity Indicator
 
 A component used to indicate that a process is ongoing, and the system is working to retrieve data, perform a task, or load content. 
 
+<!-- [Interactive Example](https://coconut-xr.github.io/apfel-kruemel/examples/#/progress-indicators) | [CodeSandbox](https://codesandbox.io/s/apfel-kruemel-examples-ld9xk5?file=/src/pages/ProgressIndicators.tsx) -->
 
-[Interactive Example](https://coconut-xr.github.io/apfel-kruemel/examples/#/progress-indicators) | [CodeSandbox](https://codesandbox.io/s/apfel-kruemel-examples-ld9xk5?file=/src/pages/ProgressIndicators.tsx)
-
-![Indicators](images/progress.gif)
-
-<br>
+<Image img={require('@site/static/images/progress.gif')}/>
 
 ### Code Example
 
@@ -35,7 +34,11 @@ export default function Indicators() {
 }
 ```
 
-#### Params
+### Sandbox
+
+<CodesandboxEmbed defaultPath="progress-indicators"/>
+
+#### _Params_
 
 ___Progress Indicator___
 
