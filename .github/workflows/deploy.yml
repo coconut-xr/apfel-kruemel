@@ -24,9 +24,9 @@ jobs:
 
             - name: Copy README.md to docs
               run: |
-                  sed -i "" 1s/^/---\\nid:\ main-doc\\nslug:\ \\/\\n---\\n\\nimport\ Image\ from\ \'@theme\\/IdealImage\'\;\\n\\n/ README.md
-                  sed -i "" -r s/'<img\ src=\"\.\/docs\/static\/images\/([A-Za-z0-9_-]*.[pngifj]*)\"\ width=\"([0-9.%]*)\">'/'<Image\ img=\{require\(\`\@site\/static\/images\/\1\`)\}\ style={{width:\ \"\2\"}}\/>'/g README.md
-                  sed -i "" s/'https\:\/\/coconut-xr.github.io\/apfel-kruemel\/docs\/'/'\/category\/predesigned-components'/g README.md
+                  sed -i 1s/^/---\\nid:\ main-doc\\nslug:\ \\/\\n---\\n\\nimport\ Image\ from\ \'@theme\\/IdealImage\'\;\\n\\n/ README.md
+                  sed -i -r s/'<img\ src=\"\.\/docs\/static\/images\/([A-Za-z0-9_-]*.[pngifj]*)\"\ width=\"([0-9.%]*)\">'/'<Image\ img=\{require\(\`\@site\/static\/images\/\1\`)\}\ style={{width:\ \"\2\"}}\/>'/g README.md
+                  sed -i s/'https\:\/\/coconut-xr.github.io\/apfel-kruemel\/docs\/'/'\/category\/predesigned-components'/g README.md
                   cp README.md docs/docs/README.md
                   
             - name: Install and Build docusaurus docs
