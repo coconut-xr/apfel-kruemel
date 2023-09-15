@@ -20,31 +20,25 @@ Explore all components in the [examples](https://coconut-xr.github.io/apfel-krue
 
 ## [Documentation](https://coconut-xr.github.io/apfel-kruemel/docs/)
 
-* [Buttons<br><img src="./docs/static/images/labelButton.png"  width="300">](https://coconut-xr.github.io/apfel-kruemel/docs/#/buttons)
+* [Buttons<br><img src="./docs/static/images/labelButton.png" width="300">](https://coconut-xr.github.io/apfel-kruemel/docs/#/buttons)
 
-* [Checkboxes<br><img src="./docs/static/images/checkbox.png"  width="300">](https://coconut-xr.github.io/apfel-kruemel/docs/#/checkboxes)
+* [Checkboxes<br><img src="./docs/static/images/checkbox.png" width="300">](https://coconut-xr.github.io/apfel-kruemel/docs/#/checkboxes)
 
-* [InputFields<br><img src="./docs/static/images/inputFields.png"  width="300">](https://coconut-xr.github.io/apfel-kruemel/docs/#/inputFields)
+* [InputFields<br><img src="./docs/static/images/inputFields.png" width="300">](https://coconut-xr.github.io/apfel-kruemel/docs/#/inputFields)
 
-* [Lists<br><img src="./docs/static/images/lists.png"  width="300">](https://coconut-xr.github.io/apfel-kruemel/docs/#/lists)
+* [Lists<br><img src="./docs/static/images/lists.png" width="300">](https://coconut-xr.github.io/apfel-kruemel/docs/#/lists)
 
-* [SegmentedControls<br><img src="./docs/static/images/segmentedControls.png"  width="300">](https://coconut-xr.github.io/apfel-kruemel/docs/#/segmentedControls)
+* [SegmentedControls<br><img src="./docs/static/images/segmentedControls.png" width="300">](https://coconut-xr.github.io/apfel-kruemel/docs/#/segmentedControls)
 
-* [Slider<br><img src="./docs/static/images/sliders.png"  width="300">](https://coconut-xr.github.io/apfel-kruemel/docs/#/slider)
+* [Slider<br><img src="./docs/static/images/sliders.png" width="300">](https://coconut-xr.github.io/apfel-kruemel/docs/#/slider)
 
-* [ProgressIndicators](https://coconut-xr.github.io/apfel-kruemel/docs/#/progressIndicators)
+* [ProgressIndicators<br></br><img src="./docs/static/images/progress.gif" width="300">](https://coconut-xr.github.io/apfel-kruemel/docs/#/progressIndicators)
 
-    <img src="./docs/static/images/progress.gif"  width="300">
-
-* [TabBars](https://coconut-xr.github.io/apfel-kruemel/docs/#/tabBars)
-
-    <img src="./docs/static/images/tabBar.gif"  width="300">
+* [TabBars<br></br><img src="./docs/static/images/tabBar.gif" width="300">](https://coconut-xr.github.io/apfel-kruemel/docs/#/tabBars)
 
 ## Tutorials
 
-- [Immersive Music Player](https://github.com/coconut-xr/getting-started)
-
-    <img src="./docs/static/images/mini-player.gif"  width="300">
+* [Immersive Music Player<br><br/><img src="./docs/static/images/mini-player.gif" width="300">](https://github.com/coconut-xr/getting-started)
 
 ---
 
