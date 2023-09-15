@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Apfel Kruemel Documentation",
-  tagline: "Apfel Kruemel are cool",
+  tagline: "Apfel Kruemel: Pre-Designed Component Library for Spatial User Interfaces rendered in Three.js",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
