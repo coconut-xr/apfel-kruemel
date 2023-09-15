@@ -21,6 +21,7 @@ jobs:
               run: |
                   npm ci --legacy-peer-deps
                   npm run build
+                  
             - name: Install and Build docusaurus docs
               working_directory: docs
               run: |
@@ -31,7 +32,7 @@ jobs:
             #   run: |
             #     sed -i 's+\./docs/+./+g' README.md
             #     cp README.md docs/README.md
-            
+
             - name: Setup Out Folder
               run: |
                   mkdir -p out/docs
