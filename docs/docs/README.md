@@ -39,7 +39,7 @@ Explore all components in the [examples](https://coconut-xr.github.io/apfel-krue
 
 * <a href="/lists">Lists<br></br><Image img={require('@site/static/images/lists.png')} style={{width: 300}}/></a>
 
-* <a href="/indicators">ProgressIndicators<br></br><Image img={require('@site/static/images/progress.gif')} style={{width: 300}}/></a>
+* <a href="/progressIndicators">ProgressIndicators<br></br><Image img={require('@site/static/images/progress.gif')} style={{width: 300}}/></a>
 
 * <a href="/segmentedcontrols">SegmentedControls<br></br><Image img={require('@site/static/images/segmentedControls.png')} style={{width: 300}}/></a>
 
