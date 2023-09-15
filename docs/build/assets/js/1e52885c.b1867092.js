@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkapfel_kruemel_docs=self.webpackChunkapfel_kruemel_docs||[]).push([[120],{3769:e=>{e.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"default"}')}}]);
