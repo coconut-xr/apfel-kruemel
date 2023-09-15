@@ -18,8 +18,10 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "Coconut XR", // Usually your GitHub org/user name.
-  projectName: "apfel-kruemel-docs", // Usually your repo name.
+  projectName: "apfel-kruemel", // Usually your repo name.
 
+  trailingSlash: false,
+  
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
