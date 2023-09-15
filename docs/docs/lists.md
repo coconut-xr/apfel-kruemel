@@ -1,12 +1,15 @@
+import Image from '@theme/IdealImage';
+import { CodesandboxEmbed } from './codesandboxEmbed.tsx'
+
 # List
 
 A component enabling a visual arrangement of items presented in a structured format.
 
-[Interactive Example](https://coconut-xr.github.io/apfel-kruemel/examples/#/lists)   | [CodeSandbox](https://codesandbox.io/s/apfel-kruemel-examples-ld9xk5?file=/src/pages/Lists.tsx)
-
-<img src="./images/lists.png" width="54.3%" alt="Lists"> <img src="./images/xr1.gif" width="33%" alt="Lists Gif">
-
-<br>
+<!-- [Interactive Example](https://coconut-xr.github.io/apfel-kruemel/examples/#/lists)   | [CodeSandbox](https://codesandbox.io/s/apfel-kruemel-examples-ld9xk5?file=/src/pages/Lists.tsx) -->
+<div style={{display: "flex"}}>
+<Image img={require('@site/static/images/lists.png')}/>
+<Image img={require('@site/static/images/xr1.gif')} style={{width: "37.8%"}}/>
+</div>
 
 ### Code Example
 
@@ -36,9 +39,13 @@ export default function List() {
 }
 ```
 
-#### Params
+### Sandbox
 
-___List Item___
+<CodesandboxEmbed defaultPath="lists"/>
+
+#### _Params_
+
+##### _List Item_
 
 | Name   | Type    | Attributes               | Description        |
 |------- |-------- |------------------------- |------------------- |
@@ -49,7 +56,7 @@ ___List Item___
 | isFirst  | boolean  | optional | If true, apply styling for first item in the list. |
 | isLast  | boolean  | optional |  If true, apply styling for last item in the list. |
 
-___List___
+##### _List_
 
 | Name   | Type    | Attributes               | Description        |
 |------- |-------- |------------------------- |------------------- |

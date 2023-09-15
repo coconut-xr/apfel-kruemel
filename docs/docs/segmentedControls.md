@@ -1,12 +1,16 @@
+import Image from '@theme/IdealImage';
+import { CodesandboxEmbed } from './codesandboxEmbed.tsx'
+
 # Segmented Controls
 
 A component enabling the user to make a choice among a set of mutually exclusive options.
 
-[Interactive Example](https://coconut-xr.github.io/apfel-kruemel/examples/#/segmented-controls) | [CodeSandbox](https://codesandbox.io/s/apfel-kruemel-examples-ld9xk5?file=/src/pages/SegmentedControls.tsx)
+<!-- [Interactive Example](https://coconut-xr.github.io/apfel-kruemel/examples/#/segmented-controls) | [CodeSandbox](https://codesandbox.io/s/apfel-kruemel-examples-ld9xk5?file=/src/pages/SegmentedControls.tsx) -->
 
-<img src="./images/segmentedControls.png" width="69.4%" alt="Segmented Controls"> <img src="./images/xr2.gif" width="25%" alt="Segmented controls Gif">
-
-<br>
+<div style={{display: "flex"}}>
+  <Image img={require('@site/static/images/segmentedControls.png')} style={{width: "73.58%"}}/>
+  <Image img={require('@site/static/images/xr2.gif')} style={{width: "26.42%"}}/>
+</div>
 
 ### Code Example
 
@@ -40,7 +44,11 @@ export default function SegmentedControl() {
 }
 ```
 
-#### Params
+### Sandbox
+
+<CodesandboxEmbed defaultPath="segmented-controls"/>
+
+#### _Params_
 
 ___Segmented Control___
 

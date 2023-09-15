@@ -1,12 +1,16 @@
+import Image from '@theme/IdealImage';
+import { CodesandboxEmbed } from './codesandboxEmbed.tsx'
+
 # Slider
 
 A component enabling the user to adjust a value within a specific range by dragging a handle along a track.
 
-[Interactive Example](https://coconut-xr.github.io/apfel-kruemel/examples/#/sliders) | [CodeSandbox](https://codesandbox.io/s/apfel-kruemel-examples-ld9xk5?file=/src/pages/Sliders.tsx)
+<!-- [Interactive Example](https://coconut-xr.github.io/apfel-kruemel/examples/#/sliders) | [CodeSandbox](https://codesandbox.io/s/apfel-kruemel-examples-ld9xk5?file=/src/pages/Sliders.tsx) -->
 
-<img src="./images/sliders.png" width="67.8%" alt="Sliders"> <img src="./images/xr3.gif" width="25%" alt="Sliders Gif">
-
-<br>
+<div style={{display: "flex"}}>
+  <Image img={require('@site/static/images/sliders.png')} style={{width: "73.1%"}}/>
+  <Image img={require('@site/static/images/xr3.gif')} style={{width: "26.9%"}}/>
+</div>
 
 ### Code Example
 
@@ -22,7 +26,11 @@ export default function Checkboxes() {
 }
 ```
 
-#### Params
+### Sandbox
+
+<CodesandboxEmbed defaultPath="sliders"/>
+
+#### _Params_
 
 | Name   | Type    | Attributes               | Description        |
 |------- |-------- |------------------------- |------------------- |
