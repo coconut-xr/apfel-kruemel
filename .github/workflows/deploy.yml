@@ -37,7 +37,7 @@ jobs:
               run: |
                   mkdir -p out/docs
                   mkdir -p out/examples
-                  cp -r docs/build out/docs
+                  cp -r docs/build/* out/docs
                   cp -r examples/dist/* out/examples
 
             - name: Deploy
