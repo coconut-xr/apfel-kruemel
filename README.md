@@ -19,25 +19,25 @@ Explore all components in the [examples](https://coconut-xr.github.io/apfel-krue
 
 ## [Documentation](https://coconut-xr.github.io/apfel-kruemel/docs/)
 
-* <a href="/buttons">Buttons<br></br><img src="./docs/static/images/labelButton.png" width="300"></a>
+* <a href="/buttons">Buttons<br></br><img src="./docs/static/images/labelButton.png" width="35%"></a>
 
-* <a href="/checkboxes">Checkboxes<br></br><img src="./docs/static/images/checkbox.png" width="300"></a>
+* <a href="/checkboxes">Checkboxes<br></br><img src="./docs/static/images/checkbox.png" width="35%"></a>
 
-* <a href="/inputFields">InputFields<br></br><img src="./docs/static/images/inputFields.png" width="300"></a>
+* <a href="/inputFields">InputFields<br></br><img src="./docs/static/images/inputFields.png" width="35%"></a>
 
-* <a href="/lists">Lists<br></br><img src="./docs/static/images/lists.png" width="300"></a>
+* <a href="/lists">Lists<br></br><img src="./docs/static/images/lists.png" width="35%"></a>
 
-* <a href="/segmentedControls">SegmentedControls<br></br><img src="./docs/static/images/segmentedControls.png" width="300"></a>
+* <a href="/segmentedControls">SegmentedControls<br></br><img src="./docs/static/images/segmentedControls.png" width="35%"></a>
 
-* <a href="/slider">Slider<br></br><img src="./docs/static/images/sliders.png" width="300"></a>
+* <a href="/slider">Slider<br></br><img src="./docs/static/images/sliders.png" width="35%"></a>
 
-* <a href="/progressIndicators">Progess Indicators<br></br><img src="./docs/static/images/progress.gif" width="300"></a>
+* <a href="/progressIndicators">Progess Indicators<br></br><img src="./docs/static/images/progress.gif" width="35%"></a>
 
-* <a href="/tabBars">Tab Bars<br></br><img src="./docs/static/images/tabBar.gif" width="300"></a>
+* <a href="/tabBars">Tab Bars<br></br><img src="./docs/static/images/tabBar.gif" width="35%"></a>
 
 ## Tutorials
 
-* <a href="https://github.com/coconut-xr/getting-started">Immersive Music Player<br></br><img src="./docs/static/images/mini-player.gif" width="300"></a>
+* <a href="https://github.com/coconut-xr/getting-started">Immersive Music Player<br></br><img src="./docs/static/images/mini-player.gif" width="35%"></a>
 
 ---
 
