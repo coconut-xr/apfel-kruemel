@@ -4,9 +4,6 @@ slug: /
 ---
 
 import Image from '@theme/IdealImage';
-import gif1 from "@site/static/images/xr1.gif";
-import gif2 from "@site/static/images/xr2.gif";
-import gif3 from "@site/static/images/xr3.gif";
 
 # @coconut-xr/apfel-kruemel
 
@@ -19,9 +16,9 @@ import gif3 from "@site/static/images/xr3.gif";
 
 *Pre-Designed Component Library for Spatial User Interfaces rendered in Three.js*
 
-<Image img={gif1} style={{width: "33%"}}/>
-<Image img={gif2} style={{width: "33%"}}/>
-<Image img={gif3} style={{width: "33%"}}/>
+<Image img={require('@site/static/images/xr1.gif')} style={{width: "33%"}}/>
+<Image img={require('@site/static/images/xr2.gif')} style={{width: "33%"}}/>
+<Image img={require('@site/static/images/xr3.gif')} style={{width: "33%"}}/>
 
 This library provides a collection of pre-designed components for spatial user interfaces built on top of [@coconut-xr/koestlich](https://github.com/coconut-xr/koestlich) (immersive ui library) and [@coconut-xr/natuerlich](https://github.com/coconut-xr/natuerlich) (immersive interaction library).
 
