@@ -41,7 +41,7 @@
     "@coconut-xr/xmaterials": "^0.0.3",
     "@react-three/drei": "^9.80.3",
     "@react-three/fiber": "^8.13.6",
-    "@types/react": "^18.2.20",
+    "@types/react": "^18.2.7",
     "@types/three": "^0.155.0",
     "@typescript-eslint/eslint-plugin": "^6.4.0",
     "eslint": "^8.47.0",
