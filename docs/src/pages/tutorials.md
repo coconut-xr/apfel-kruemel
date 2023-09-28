@@ -9,8 +9,7 @@ _A simple, immersive, draggable music player_
 
 [__GitHub__](https://github.com/coconut-xr/getting-started)
 
+[__YouTube__](https://www.youtube.com/watch?v=ag-dnKJaDgw)
+
 <Image img={require('@site/static/images/mini-player.gif')} style={{width: 300}}/>
 
-## YouTube: Getting Started Tutorial - Coconut XR Ecosystem
-
-<YouTubeEmbed path="ag-dnKJaDgw?si=at557Qy9lcKJtisE" />
