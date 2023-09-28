@@ -97,15 +97,15 @@ const config = {
             items: [
               {
                 label: "Koestlich",
-                href: "https://coconut-xr.github.io/koestlich/#/",
+                href: "https://coconut-xr.github.io/koestlich/",
               },
               {
                 label: "Natuerlich",
-                href: "https://coconut-xr.github.io/natuerlich/#/",
+                href: "https://coconut-xr.github.io/natuerlich/",
               },
               {
                 label: "Apfel Kruemel",
-                href: "https://coconut-xr.github.io/apfel-kruemel/#/",
+                href: "https://coconut-xr.github.io/apfel-kruemel/docs/",
               },
             ],
           },
